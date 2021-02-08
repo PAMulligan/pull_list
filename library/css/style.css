@@ -2267,7 +2267,7 @@ be seen on the Desktop.
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .post {
+  .landing-post {
     margin-right: 2em;
     -ms-flex-preferred-size: 45%;
         flex-basis: 45%;
