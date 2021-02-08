@@ -422,7 +422,21 @@ be seen on the Desktop.
 
 ******************************************************************/
 .wrap {
-  width: 1040px;
+  width: 100%;
+}
+
+#main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.post {
+  margin-right: 2em;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
 }
 
 /*

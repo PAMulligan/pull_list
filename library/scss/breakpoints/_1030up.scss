@@ -10,5 +10,15 @@ be seen on the Desktop.
 ******************************************************************/
 
 .wrap {
-  width: 1040px;
+  width: 100%;
+}
+
+#main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post {
+  margin-right: 2em;
+  flex-basis: 45%;
 }

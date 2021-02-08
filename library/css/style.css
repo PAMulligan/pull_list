@@ -666,8 +666,8 @@ BOX SIZING
 /* NOTE: value of "padding-box" is only supported in Gecko. So
 probably best not to use it. I mean, were you going to anyway? */
 /******************************************************************
-Site Name:
-Author:
+Site Name: Pull List
+Author: Paul Mulliganiel
 
 Stylesheet: Grid Stylesheet
 
@@ -792,6 +792,23 @@ them however you see fit.
 
 /* Landscape to small desktop */
 @media (min-width: 1030px) {
+  #inner-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 3.25fr 1fr;
+        grid-template-columns: 3.25fr 1fr;
+        grid-template-areas: "posts sidebar";
+  }
+  #inner-content #main {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: posts;
+  }
+  #inner-content .sidebar {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: sidebar;
+  }
   .d-all {
     float: left;
     padding-right: 0.75em;
@@ -1396,7 +1413,7 @@ LAYOUT & GRID STYLES
 *********************/
 .wrap {
   width: 96%;
-  margin: 0 auto;
+  margin: 0 2em;
 }
 
 /*********************
@@ -2241,7 +2258,19 @@ be seen on the Desktop.
 
 ******************************************************************/
   .wrap {
-    width: 1040px;
+    width: 100%;
+  }
+  #main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .post {
+    margin-right: 2em;
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
   }
 }
 

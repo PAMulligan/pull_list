@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name:
-Author:
+Site Name: Pull List
+Author: Paul Mulliganiel
 
 Stylesheet: Grid Stylesheet
 
@@ -138,6 +138,21 @@ them however you see fit.
 
 /* Landscape to small desktop */
 @media (min-width: 1030px) {
+
+  #inner-content {
+    display: grid;
+    grid-template-columns: 3.25fr 1fr;
+    grid-template-areas:
+        "posts sidebar";
+    
+        #main {
+          grid-area: posts;
+        }
+        
+        .sidebar {
+          grid-area: sidebar;
+        }
+  }
 
   .d-all  {
     @include grid-col;
