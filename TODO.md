@@ -4,13 +4,12 @@
 
 ### Structure
 
-- Integrate graphic assets into Bones theme
+- ~~Integrate graphic assets into Bones theme~~
 - Clean out non-essential code
 - Code pages for:
-  - Landing
+  - ~~Landing~~
   - Blog post
-  - Categories
-  - Tags
+  - ~~Categories~~
 - Refactor if necessary
 
 ### Style
