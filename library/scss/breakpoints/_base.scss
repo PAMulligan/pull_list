@@ -71,7 +71,7 @@ LAYOUT & GRID STYLES
 *********************/
 
 .wrap {
-	width: 96%;
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -885,5 +885,24 @@ FOOTER STYLES
 
 	} /* end .footer-links */
 
-
-	.copyright {}
+	/* Responsive Menu*/
+	.panel{ position: fixed; right: -15.625em; width: 15.625em; background:#222;}
+	.push{position:relative;}
+	.menu-link{display:none;color:#fff;background:#333;border-radius:4px;padding:2px 12px;float:right;}
+	.mobile-menu a{display:block;color:#fff;padding:10px 15px;}
+	.mobile-menu a:hover{background-color:#555;}
+	.mobile-menu li{border-bottom:1px #444 solid;}
+	#inner-header {
+		position: relative;
+	}
+	.menu-link {
+		position: absolute;
+		top: 1em;
+		right: 1em;
+	}
+@media only screen and (max-width:900px) {
+ 
+	#primary-menu{display:none;}
+	.mobile-menu #primary-menu{display:block;}
+	.menu-link{display:inline-block;}
+}

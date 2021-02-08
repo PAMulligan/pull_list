@@ -243,5 +243,6 @@ function bones_fonts() {
 }
 
 add_action('wp_enqueue_scripts', 'bones_fonts');
+wp_enqueue_script( 'my-responive-menu', get_template_directory_uri() . '/library/js/bigSlide.min.js', array(), '20161214', true );
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>

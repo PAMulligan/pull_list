@@ -26,11 +26,12 @@
 		<?php // end analytics ?>
 	</head>
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
-		<div id="container">
+		<div id="container" class="push">
 			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 				<div id="inner-header" class="wrap cf">
+					<a href="#responsive-menu" class="menu-link">&#9776;</a>
 					<a href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo get_theme_file_uri('../theme-bones/library/images/Header.jpg'); ?>"></a>
-					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement" id="primary-menu">
 						<?php wp_nav_menu(array(
     					         'container' => false,                           // remove nav container
     					         'container_class' => 'menu cf',                 // class of container (should you choose to use it)

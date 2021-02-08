@@ -28,7 +28,15 @@
 
 		<?php // all js scripts are loaded in library/bones.php ?>
 		<?php wp_footer(); ?>
-
+		<div id="responsive-menu" class="panel mobile-menu">
+			<?php wp_nav_menu( array('theme_location', 'primary')); ?>
+		</div>
+		<script>jQuery('.menu-link').bigSlide({
+      menu: '.mobile-menu',
+      speed: 300,
+      side:"right",
+      easyClose:true});
+		</script>
 	</body>
 
 </html> <!-- end of site. what a ride! -->
