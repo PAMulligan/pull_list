@@ -30,8 +30,6 @@
 			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 				<div id="inner-header" class="wrap cf">
 					<a href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo get_theme_file_uri('../theme-bones/library/images/Header.jpg'); ?>"></a>
-					<?php // if you'd like to use the site description you can un-comment it below ?>
-					<?php // bloginfo('description'); ?>
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 						<?php wp_nav_menu(array(
     					         'container' => false,                           // remove nav container

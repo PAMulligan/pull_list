@@ -1345,8 +1345,8 @@ you set a great foundation, you won't need to add too many styles in
 the other stylesheets. Remember, keep it light: Speed is Important.
 *********************/
 /******************************************************************
-Site Name:
-Author:
+Site Name: Pull List
+Author: Paul Mulliganiel
 
 Stylesheet: Base Mobile Stylesheet
 
@@ -1413,7 +1413,7 @@ LAYOUT & GRID STYLES
 *********************/
 .wrap {
   width: 96%;
-  margin: 0 2em;
+  margin: 0 auto;
 }
 
 /*********************
@@ -1490,12 +1490,8 @@ HEADER STYLES
   background: url("../../images/Header.jpg") no-repeat cover;
 }
 
-#logo {
-  margin: 0.75em 0;
-}
-
-#logo a {
-  color: #fff;
+.header #inner-header a img {
+  max-width: 100vw;
 }
 
 /*********************
@@ -2259,6 +2255,7 @@ be seen on the Desktop.
 ******************************************************************/
   .wrap {
     width: 100%;
+    margin: 0 2em;
   }
   #main {
     display: -webkit-box;
