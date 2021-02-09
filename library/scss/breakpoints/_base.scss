@@ -264,11 +264,31 @@ POSTS & CONTENT STYLES
 			header {
 				border-bottom: 1px solid $light-gray;
 				padding: 1.5em;
+				position: relative;
+
+				img {
+					opacity: 0.5;
+				}
+
+				.entry-title {
+					position: absolute;
+					top: 2em;
+				}
+			}
+
+			.entry-content {
+				color: $black;
+				
+				p {
+					// Magic number alert, this matches the header image.
+					max-width: 300px;
+				}
 			}
 
 			footer {
 				padding: 1.5em;
 				border-top: 1px solid $light-gray;
+				color: $black;
 
 				p {
 					margin: 0;
@@ -303,7 +323,7 @@ POSTS & CONTENT STYLES
 
 		/* post meta */
 		.byline {
-			color: $meta-gray;
+			color: $black;
 			font-style: italic;
 			margin: 0;
 
@@ -822,7 +842,14 @@ COMMENT FORM STYLES
 SIDEBARS & ASIDES
 *********************/
 
-.sidebar {}
+.sidebar {
+	color: $light-gray;
+	padding: 1em;
+
+	input[type="search"] {
+		width: 85%;
+	}
+}
 
 	.widgettitle {}
 
@@ -864,6 +891,10 @@ FOOTER STYLES
 	clear: both;
 	background-color: $black;
 	color: $light-gray;
+
+	.copyright {
+		padding: 0 0.7em 0.4em;
+	}
 }
 
 	/*

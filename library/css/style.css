@@ -1558,11 +1558,30 @@ POSTS & CONTENT STYLES
 .hentry header {
   border-bottom: 1px solid #f8f9fa;
   padding: 1.5em;
+  position: relative;
+}
+
+.hentry header img {
+  opacity: 0.5;
+}
+
+.hentry header .entry-title {
+  position: absolute;
+  top: 2em;
+}
+
+.hentry .entry-content {
+  color: #323944;
+}
+
+.hentry .entry-content p {
+  max-width: 300px;
 }
 
 .hentry footer {
   padding: 1.5em;
   border-top: 1px solid #f8f9fa;
+  color: #323944;
 }
 
 .hentry footer p {
@@ -1587,7 +1606,7 @@ POSTS & CONTENT STYLES
 /* style by tag (i.e. tag-news) */
 /* post meta */
 .byline {
-  color: #9fa6b4;
+  color: #323944;
   font-style: italic;
   margin: 0;
 }
@@ -1962,6 +1981,15 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
+.sidebar {
+  color: #f8f9fa;
+  padding: 1em;
+}
+
+.sidebar input[type="search"] {
+  width: 85%;
+}
+
 .widget ul li {
   /* deep nesting */
 }
@@ -1982,6 +2010,10 @@ FOOTER STYLES
   clear: both;
   background-color: #323944;
   color: #f8f9fa;
+}
+
+.footer .copyright {
+  padding: 0 0.7em 0.4em;
 }
 
 /*
