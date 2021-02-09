@@ -8,7 +8,7 @@
 - Clean out non-essential code
 - Code pages for:
   - ~~Landing~~
-  - Blog post
+  - ~~Blog post~~
   - ~~Categories~~
 - Refactor if necessary
 
