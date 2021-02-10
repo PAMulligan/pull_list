@@ -253,6 +253,11 @@ POSTS & CONTENT STYLES
 
 #content {
 	margin-top: 1.5em;
+
+	.content-description {
+		padding: 1em;
+		color: $light-gray;
+	}
 }
 
 		.hentry {
@@ -305,7 +310,11 @@ POSTS & CONTENT STYLES
 
 		.single-title {}
 
-		.page-title {}
+		.page-title {
+			padding: 0 1em;
+			color: $light-gray;
+			font-size: 2.3em;
+		}
 
 		.entry-title {}
 
