@@ -2266,21 +2266,28 @@ be seen on the Desktop.
     width: 96%;
     margin: 0 2em;
   }
-  #main {
+  #content .main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
   .header #inner-header a img {
-    max-width: 70%;
+    max-width: 72.9%;
   }
   #sidebar2 {
     display: block;
     position: absolute;
     top: 0em;
-    right: 10em;
+    right: 11em;
   }
   #sidebar2 .tag-cloud-link {
     color: #f8f9fa;
@@ -2292,6 +2299,13 @@ be seen on the Desktop.
     margin-right: 2em;
     -ms-flex-preferred-size: 45%;
         flex-basis: 45%;
+  }
+  .hentry .article-header img {
+    width: 600px;
+    height: 200px;
+  }
+  .hentry .entry-content p {
+    max-width: 600px;
   }
 }
 

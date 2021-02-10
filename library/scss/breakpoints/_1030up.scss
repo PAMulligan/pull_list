@@ -14,16 +14,21 @@ be seen on the Desktop.
   margin: 0 2em;
 }
 
-#main {
-  display: flex;
-  flex-wrap: wrap;
+
+#content {
+  .main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
 }
 
 .header {
   #inner-header {
     a {
       img {
-        max-width: 70%;
+        max-width: 72.9%;
       }
     }
   }
@@ -33,7 +38,7 @@ be seen on the Desktop.
   display: block;
   position: absolute;
   top: 0em;
-  right: 10em;
+  right: 11em;
 
   .tag-cloud-link {
     color: $light-gray;
@@ -46,4 +51,18 @@ be seen on the Desktop.
 .landing-post {
   margin-right: 2em;
   flex-basis: 45%;
+}
+
+.hentry {
+  .article-header {
+    img {
+      width: 600px;
+      height: 200px;
+    }
+  }
+  .entry-content {
+    p {
+      max-width: 600px;
+    }
+  }
 }
