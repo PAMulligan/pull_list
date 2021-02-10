@@ -31,8 +31,8 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   text-decoration: none;
   color: $white;
   font-size: 0.9em;
-  font-size: 34px;
-  line-height: 34px;
+  font-size: 1.25em;
+  line-height: 2em;
   font-weight: normal;
   padding: 0 24px;
   border-radius: 4px;
@@ -61,15 +61,21 @@ and it will create a button dependant on those variables.
 */
 .blue-btn {
   @extend %btn; // here we load the btn defaults
-  background-color: $blue;
-
+  background-color: $alert-yellow;
+  
   &:hover,
   &:focus {
-    background-color: darken($blue, 4%);
+    background-color: darken($alert-yellow, 4%);
   } // end hover
 
   &:active {
-    background-color: darken($blue, 5%);
+    background-color: darken($alert-yellow, 5%);
   } // end active
+
+  a,
+  a:visited {
+    color: $bones-pink;
+    text-decoration: none;
+  }
 
 } // end blue button

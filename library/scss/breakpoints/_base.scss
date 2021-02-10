@@ -254,8 +254,15 @@ POSTS & CONTENT STYLES
 #content {
 	margin-top: 1.5em;
 
-	.content-description {
-		padding: 1em;
+	.archive-main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-items: center;
+	}
+
+	.taxonomy-description {
+		padding-bottom: 1em;
 		color: $light-gray;
 	}
 }
@@ -311,7 +318,6 @@ POSTS & CONTENT STYLES
 		.single-title {}
 
 		.page-title {
-			padding: 0 1em;
 			color: $light-gray;
 			font-size: 2.3em;
 		}
