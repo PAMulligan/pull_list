@@ -1377,45 +1377,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/********************
-WORDPRESS BODY CLASSES
-style a page via class
-********************/
-/* for sites that are read right to left (i.e. hebrew) */
-/* home page */
-/* blog template page */
-/* archive page */
-/* date archive page */
-/* replace the number to the corresponding page number */
-/* search page */
-/* search result page */
-/* no results search page */
-/* individual paged search (i.e. body.search-paged-3) */
-/* 404 page */
-/* single post page */
-/* individual post page by id (i.e. body.postid-73) */
-/* individual paged single (i.e. body.single-paged-3) */
-/* attatchment page */
-/* individual attatchment page (i.e. body.attachmentid-763) */
-/* style mime type pages */
-/* author page */
-/* user nicename (i.e. body.author-samueladams) */
-/* paged author archives (i.e. body.author-paged-4) for page 4 */
-/* category page */
-/* individual category page (i.e. body.category-6) */
-/* replace the number to the corresponding page number */
-/* tag page */
-/* individual tag page (i.e. body.tag-news) */
-/* replace the number to the corresponding page number */
-/* custom page template page */
-/* individual page template (i.e. body.page-template-contact-php */
-/* replace the number to the corresponding page number */
-/* parent page template */
-/* child page template */
-/* replace the number to the corresponding page number */
-/* if user is logged in */
-/* paged items like search results or archives */
-/* individual paged (i.e. body.paged-3) */
 /*********************
 LAYOUT & GRID STYLES
 *********************/
@@ -1430,7 +1391,6 @@ LINK STYLES
 a, a:visited {
   color: #f01d4f;
   /* on hover */
-  /* on click */
   /* mobile tap color */
 }
 
@@ -1516,8 +1476,6 @@ and more scalable.
   border-bottom: 0;
   margin: 0;
   /* end .menu li */
-  /* highlight current page */
-  /* end current highlighters */
 }
 
 .nav li {
@@ -1627,15 +1585,6 @@ POSTS & CONTENT STYLES
   font-size: 2.3em;
 }
 
-/* want to style individual post classes? Booya! */
-/* post by id (i.e. post-3) */
-/* general post style */
-/* general article on a page style */
-/* general style on an attatchment */
-/* sticky post style */
-/* hentry class */
-/* style by category (i.e. category-videos) */
-/* style by tag (i.e. tag-news) */
 /* post meta */
 .byline {
   color: #323944;
@@ -1646,12 +1595,6 @@ POSTS & CONTENT STYLES
 /* entry content */
 .entry-content {
   padding: 1.5em 1.5em 0;
-  /*
-			image alignment on a screen this size may be
-			a bit difficult. It's set to start aligning
-			and floating images at the next breakpoint,
-			but it's up to you. Feel free to change it up.
-			*/
 }
 
 .entry-content p {
@@ -1759,9 +1702,6 @@ POSTS & CONTENT STYLES
 }
 
 /* end .wp-caption */
-/* image gallery styles */
-/* end .gallery */
-/* gallery caption styles */
 .tags {
   margin: 0;
 }
@@ -1843,7 +1783,6 @@ COMMENT STYLES
   padding: 0.75em;
   margin: 0;
   border-top: 1px solid #f8f9fa;
-  /* number of comments span */
 }
 
 .commentlist {
@@ -1904,8 +1843,6 @@ COMMENT STYLES
 
 .comment .children {
   margin: 0;
-  /* variations */
-  /* change number for different depth */
 }
 
 .comment[class*=depth-] {
@@ -1931,7 +1868,6 @@ COMMENT STYLES
   background: #f8f9fa;
 }
 
-/* comment meta */
 /* comment content */
 .comment_content p {
   margin: 0.7335em 0 1.5em;
@@ -1998,8 +1934,6 @@ COMMENT FORM STYLES
   margin: 0 0 1.1em;
 }
 
-/* cancel comment reply link */
-/* logged in comments */
 /* allowed tags */
 #allowed_tags {
   margin: 1.5em 10px 0.7335em 0;
@@ -2020,10 +1954,6 @@ SIDEBARS & ASIDES
 
 .sidebar input[type="search"] {
   width: 85%;
-}
-
-.widget ul li {
-  /* deep nesting */
 }
 
 .no-widgets {
@@ -2048,16 +1978,6 @@ FOOTER STYLES
   padding: 0 0.7em 0.4em;
 }
 
-/*
-	if you checked out the link above:
-	http://www.alistapart.com/articles/organizing-mobile/
-	you'll want to style the footer nav
-	a bit more in-depth. Remember to keep
-	it simple because you'll have to
-	override these styles for the desktop
-	view.
-	*/
-/* end .footer-links */
 /* Responsive Menu*/
 .panel {
   position: fixed;

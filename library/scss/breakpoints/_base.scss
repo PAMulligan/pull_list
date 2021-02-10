@@ -25,47 +25,6 @@ body {
   	-moz-osx-font-smoothing: grayscale;
 }
 
-/********************
-WORDPRESS BODY CLASSES
-style a page via class
-********************/
-
-.rtl {}                           /* for sites that are read right to left (i.e. hebrew) */
-.home {}                          /* home page */
-.blog {}                          /* blog template page */
-.archive {}                       /* archive page */
-.date {}                          /* date archive page */
-	.date-paged-1 {}                /* replace the number to the corresponding page number */
-.search {}                        /* search page */
-	.search-results {}              /* search result page */
-	.search-no-results {}           /* no results search page */
-	.search-paged-1 {}              /* individual paged search (i.e. body.search-paged-3) */
-.error404 {}                      /* 404 page */
-.single {}                        /* single post page */
-	.postid-1 {}                    /* individual post page by id (i.e. body.postid-73) */
-	.single-paged-1 {}              /* individual paged single (i.e. body.single-paged-3) */
-.attachment {}                    /* attatchment page */
-	.attachmentid-1 {}              /* individual attatchment page (i.e. body.attachmentid-763) */
-	.attachment-mime-type {}        /* style mime type pages */
-.author {}                        /* author page */
-	.author-nicename {}             /* user nicename (i.e. body.author-samueladams) */
-	.author-paged-1 {}              /* paged author archives (i.e. body.author-paged-4) for page 4 */
-.category {}                      /* category page */
-	.category-1 {}                  /* individual category page (i.e. body.category-6) */
-	.category-paged-1 {}            /* replace the number to the corresponding page number */
-.tag {}                           /* tag page */
-	.tag-slug {}                    /* individual tag page (i.e. body.tag-news) */
-	.tag-paged-1 {}                 /* replace the number to the corresponding page number */
-.page-template {}                 /* custom page template page */
-	.page-template-page-php {}      /* individual page template (i.e. body.page-template-contact-php */
-	.page-paged-1 {}                /* replace the number to the corresponding page number */
-	.page-parent {}                 /* parent page template */
-	.page-child {}                  /* child page template */
-	.parent-pageid-1 {}             /* replace the number to the corresponding page number */
-.logged-in {}                     /* if user is logged in */
-.paged {}                         /* paged items like search results or archives */
-	.paged-1 {}                     /* individual paged (i.e. body.paged-3) */
-
 /*********************
 LAYOUT & GRID STYLES
 *********************/
@@ -85,11 +44,6 @@ a, a:visited {
 	/* on hover */
 	&:hover, &:focus {
 		color: $link-hover;
-	}
-
-	/* on click */
-	&:active {
-
 	}
 
 	/* mobile tap color */
@@ -194,14 +148,7 @@ and more scalable.
 			the style.scss file where it's relevant. We want to
 			keep this file as small as possible!
 			*/
-			&:hover, &:focus {
-
-			}
 		}
-
-		&:first-child {}
-
-		&:last-child {}
 
 		/*
 		so you really have to rethink your dropdowns for mobile.
@@ -217,33 +164,12 @@ and more scalable.
 
 				a {
 					padding-left: 30px;
-
-					&:hover,
-					&:focus {}
-
-					&:link {}
-
 				}
-
-				&:first-child {}
-
-				&:last-child {}
-
 			}
 
 		}
 
 	} /* end .menu li */
-
-	/* highlight current page */
-	li.current-menu-item,
-	li.current_page_item,
-	li.current_page_ancestor {
-
-		a {}
-
-	}  /* end current highlighters */
-
 } /* end .nav */
 
 
@@ -315,34 +241,16 @@ POSTS & CONTENT STYLES
 			margin: 0;
 		}
 
-		.single-title {}
-
 		.page-title {
 			color: $light-gray;
 			font-size: 2.3em;
 		}
-
-		.entry-title {}
-
-		.archive-title {}
-
-		/* want to style individual post classes? Booya! */
-		.post-id {}         /* post by id (i.e. post-3) */
-		.post {}            /* general post style */
-		.page {}            /* general article on a page style */
-		.attachment {}      /* general style on an attatchment */
-		.sticky {}          /* sticky post style */
-		.hentry {}          /* hentry class */
-		.category-slug {}   /* style by category (i.e. category-videos) */
-		.tag-slug {}        /* style by tag (i.e. tag-news) */
 
 		/* post meta */
 		.byline {
 			color: $black;
 			font-style: italic;
 			margin: 0;
-
-			time {}
 		}
 
 		/* entry content */
@@ -351,27 +259,6 @@ POSTS & CONTENT STYLES
 
 			p {
 				margin: 0 0 1.5em;
-			}
-
-
-			ul, ol, table, dl {}
-
-			ul, ol {
-
-				li {}
-
-			}
-
-			ul {
-
-				li {}
-
-			}
-
-			ol {
-
-				li {}
-
 			}
 
 			table {
@@ -422,13 +309,7 @@ POSTS & CONTENT STYLES
 				font-style: italic;
 				color: $meta-gray;
 
-				&:before {}
-
 			}
-
-			dl {}
-
-			dt {}
 
 			dd {
 				margin-left: 0;
@@ -442,16 +323,6 @@ POSTS & CONTENT STYLES
 				max-width: 100%;
 				height: auto;
 			}
-
-			/*
-			image alignment on a screen this size may be
-			a bit difficult. It's set to start aligning
-			and floating images at the next breakpoint,
-			but it's up to you. Feel free to change it up.
-			*/
-			.alignleft, img.alignleft {}
-			.alignright, img.alignright {}
-			.aligncenter, img.aligncenter {}
 
 			.size-auto,
 			.size-full,
@@ -492,31 +363,6 @@ POSTS & CONTENT STYLES
 			}
 
 		} /* end .wp-caption */
-
-		/* image gallery styles */
-		.gallery {
-
-			dl {
-
-				a {}
-
-				img {}
-
-			}
-
-			dt {}
-
-			dd {}
-
-		} /* end .gallery */
-
-		/* gallery caption styles */
-		.gallery-caption {}
-
-		.size-full {}
-		.size-large {}
-		.size-medium {}
-		.size-thumbnail {}
 
 	// the tag output
 	.tags {
@@ -585,8 +431,6 @@ PAGE NAVI STYLES
 	/* fallback previous & next links */
 	.wp-prev-next {
 
-		ul {}
-
 		.prev-link {
 			float: left;
 		}
@@ -607,20 +451,7 @@ COMMENT STYLES
 	margin: 0;
 	border-top: 1px solid $light-gray;
 
-	/* number of comments span */
-	span {}
-
 }
-
-.comment-nav {
-
-	ul {
-
-		li {}
-
-	}
-}
-
 
 .commentlist {
 	margin: 0;
@@ -647,8 +478,6 @@ COMMENT STYLES
 			font-weight: 700;
 			font-style: normal;
 
-			a.url {}
-
 		}
 
 		time {
@@ -668,8 +497,6 @@ COMMENT STYLES
 
 		}
 
-		.photo {}
-
 		.avatar {
 			position: absolute;
 			left: 16px;
@@ -684,19 +511,6 @@ COMMENT STYLES
 
 	.children {
 		margin: 0;
-
-		li {}
-
-			/* variations */
-			.comment {}
-			.alt {}
-			.odd {}
-			.even {}
-			.depth-1 {}           /* change number for different depth */
-			.byuser {}
-			.bypostauthor {}
-			.comment-author-admin {}
-
 	} /* end children */
 
 
@@ -715,46 +529,14 @@ COMMENT STYLES
 		padding: 7px;
 	}
 
-	&.depth-2 {}
-	&.depth-3 {}
-	&.depth-4 {}
-	&.depth-5 {}
-
 	/* general comment classes */
-	&.alt {}
 	&.odd {
 		background-color: $white;
 	}
 	&.even {
 		background: $light-gray;
 	}
-	&.parent {}
-	&.comment {}
-	&.children {}
-	&.pingback {}
-	&.bypostauthor {}
-	&.comment-author {}
-	&.comment-author-admin {}
-	&.thread-alt {}
-	&.thread-odd {}
-	&.thread-even {}
 }
-
-
-
-
-	/* comment meta */
-	.comment-meta {
-
-		a {}
-
-	}
-
-	.commentmetadata {
-
-		a {}
-
-	}
 
 	/* comment content */
 	.comment_content {
@@ -772,11 +554,6 @@ COMMENT STYLES
 		@extend .blue-btn;
 		font-size: 0.9em;
 		float: right;
-
-		&:hover,
-		&:focus {
-		}
-
 	} /* end .commentlist .comment-reply-link */
 
 	/* edit comment link */
@@ -835,14 +612,6 @@ COMMENT FORM STYLES
 		margin: 0 0 1.1em;
 	}
 
-	/* cancel comment reply link */
-	#cancel-comment-reply {
-		a {}
-	}
-
-	/* logged in comments */
-	.comments-logged-in-as {}
-
 	/* allowed tags */
 	#allowed_tags {
 		margin: 1.5em 10px 0.7335em 0;
@@ -866,29 +635,6 @@ SIDEBARS & ASIDES
 	}
 }
 
-	.widgettitle {}
-
-	.widget {
-
-		ul {
-
-			li {
-
-				&:first-child {}
-
-				&:last-child {}
-
-				a {}
-
-				/* deep nesting */
-				ul {}
-
-			}
-
-		}
-
-	}
-
 	.no-widgets {
 		background-color: $white;
 		padding: 1.5em;
@@ -911,25 +657,6 @@ FOOTER STYLES
 		padding: 0 0.7em 0.4em;
 	}
 }
-
-	/*
-	if you checked out the link above:
-	http://www.alistapart.com/articles/organizing-mobile/
-	you'll want to style the footer nav
-	a bit more in-depth. Remember to keep
-	it simple because you'll have to
-	override these styles for the desktop
-	view.
-	*/
-	.footer-links {
-
-		ul {
-
-			li {}
-
-		}
-
-	} /* end .footer-links */
 
 	/* Responsive Menu*/
 	.panel{ position: fixed; right: -15.625em; width: 15.625em; background:#222;}
