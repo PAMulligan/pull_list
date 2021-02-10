@@ -1956,6 +1956,10 @@ SIDEBARS & ASIDES
   width: 85%;
 }
 
+#sidebar2 {
+  display: none;
+}
+
 .no-widgets {
   background-color: #fff;
   padding: 1.5em;
@@ -2259,7 +2263,7 @@ be seen on the Desktop.
 
 ******************************************************************/
   .wrap {
-    width: 100%;
+    width: 96%;
     margin: 0 2em;
   }
   #main {
@@ -2269,28 +2273,26 @@ be seen on the Desktop.
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .header #inner-header a img {
+    max-width: 70%;
+  }
+  #sidebar2 {
+    display: block;
+    position: absolute;
+    top: 0em;
+    right: 10em;
+  }
+  #sidebar2 .tag-cloud-link {
+    color: #f8f9fa;
+    font-size: 1em !important;
+    line-height: 1.5em;
+    padding-right: 0.5em;
+  }
   .landing-post {
     margin-right: 2em;
     -ms-flex-preferred-size: 45%;
         flex-basis: 45%;
   }
-}
-
-/*********************
-LARGE VIEWING SIZE
-This is for the larger monitors and possibly full screen viewers.
-*********************/
-@media only screen and (min-width: 1240px) {
-  /******************************************************************
-Site Name: 
-Author: 
-
-Stylesheet: Super Large Monitor Stylesheet
-
-You can add some advanced styles here if you like. This kicks in
-on larger screens.
-
-******************************************************************/
 }
 
 /*********************

@@ -10,13 +10,37 @@ be seen on the Desktop.
 ******************************************************************/
 
 .wrap {
-  width: 100%;
+  width: 96%;
   margin: 0 2em;
 }
 
 #main {
   display: flex;
   flex-wrap: wrap;
+}
+
+.header {
+  #inner-header {
+    a {
+      img {
+        max-width: 70%;
+      }
+    }
+  }
+}
+
+#sidebar2 {
+  display: block;
+  position: absolute;
+  top: 0em;
+  right: 10em;
+
+  .tag-cloud-link {
+    color: $light-gray;
+    font-size: 1em !important;
+    line-height: 1.5em;
+    padding-right: 0.5em;
+  }
 }
 
 .landing-post {

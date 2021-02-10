@@ -385,7 +385,7 @@ be seen on the Desktop.
 
 ******************************************************************/
 .wrap {
-  width: 100%;
+  width: 96%;
   margin: 0 2em;
 }
 
@@ -395,6 +395,24 @@ be seen on the Desktop.
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.header #inner-header a img {
+  max-width: 70%;
+}
+
+#sidebar2 {
+  display: block;
+  position: absolute;
+  top: 0em;
+  right: 10em;
+}
+
+#sidebar2 .tag-cloud-link {
+  color: #f8f9fa;
+  font-size: 1em !important;
+  line-height: 1.5em;
+  padding-right: 0.5em;
 }
 
 .landing-post {
