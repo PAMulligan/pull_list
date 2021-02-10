@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 			<div id="content">
 				<div id="inner-content" class="wrap cf">
-					<main id="main" class="m-all t-2of3 d-all cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+					<main id="main" class="m-all t-2of3 d-all cf main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 						<div class="landing-post">
 							<?php $comic_query = new WP_Query(array(
 								'posts_per_page' => 5,
@@ -20,7 +20,7 @@
 										); ?>
 									</p>
 								</header>
-								<section class="entry-content cf">
+								<section class="entry-content cf" itemprop="articleBody">
 									<?php the_content(); ?>
 								</section>
 								<footer class="article-footer cf">
