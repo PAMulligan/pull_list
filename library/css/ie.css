@@ -248,8 +248,8 @@ do they need tweaking?
 */
 /* end .footer-links */
 /******************************************************************
-Site Name:
-Author:
+Site Name: Pull List
+Author: Paul Mulliganiel
 
 Stylesheet: Tablet & Small Desktop Stylesheet
 
@@ -261,26 +261,19 @@ come into play. Have fun!
 
 ******************************************************************/
 /*********************
-GENERAL STYLES
-*********************/
-/*********************
 LAYOUT & GRID STYLES
 *********************/
 .wrap {
   width: 760px;
+  margin-left: 0;
 }
 
-/*********************
-HEADER STYLES
-*********************/
 /*********************
 NAVIGATION STYLES
 *********************/
 .nav {
   border: 0;
   /* end .menu ul li */
-  /* highlight current page */
-  /* end current highlighters */
 }
 
 .nav ul {
@@ -318,7 +311,6 @@ NAVIGATION STYLES
   position: absolute;
   visibility: hidden;
   z-index: 8999;
-  /* highlight sub-menu current page */
 }
 
 .nav li ul.sub-menu li,
@@ -375,7 +367,6 @@ SIDEBARS & ASIDES
 
 .widget ul li {
   margin-bottom: 0.75em;
-  /* deep nesting */
 }
 
 .widget ul li ul {
@@ -383,34 +374,6 @@ SIDEBARS & ASIDES
   padding-left: 1em;
 }
 
-/* links widget */
-/* meta widget */
-/* pages widget */
-/* recent-posts widget */
-/* archives widget */
-/* tag-cloud widget */
-/* calendar widget */
-/* category widget */
-/* recent-comments widget */
-/* search widget */
-/* text widget */
-/*********************
-FOOTER STYLES
-*********************/
-/*
-you'll probably need to do quite a bit
-of overriding here if you styled them for
-mobile. Make sure to double check these!
-*/
-.footer-links ul li {
-  /*
-			be careful with the depth of your menus.
-			it's very rare to have multi-depth menus in
-			the footer.
-			*/
-}
-
-/* end .footer-links */
 /******************************************************************
 Site Name:
 Author:
