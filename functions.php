@@ -170,7 +170,7 @@ function bones_register_sidebars() {
 	your new sidebar just use the following code:
 
 	Just change the name to whatever your new
-	sidebar's id is, for example:*/
+	sidebar's id is, for example:
 
 	register_sidebar(array(
 		'id' => 'sidebar2',
@@ -182,7 +182,7 @@ function bones_register_sidebars() {
 		'after_title' => '</h4>',
 	));
 
-	/*To call the sidebar in your template, you can just copy
+	To call the sidebar in your template, you can just copy
 	the sidebar.php file and rename it to your sidebar's name.
 	So using the above example, it would be:
 	sidebar-sidebar2.php

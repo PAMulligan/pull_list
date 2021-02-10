@@ -1560,7 +1560,7 @@ POSTS & CONTENT STYLES
 }
 
 .hentry .entry-content p {
-  max-width: 99%;
+  max-width: 300px;
 }
 
 .hentry footer {
@@ -1956,10 +1956,6 @@ SIDEBARS & ASIDES
   width: 85%;
 }
 
-#sidebar2 {
-  display: none;
-}
-
 .no-widgets {
   background-color: #fff;
   padding: 1.5em;
@@ -2134,8 +2130,8 @@ you can add resource intensive styles.
 *********************/
 @media only screen and (min-width: 768px) {
   /******************************************************************
-Site Name: Pull List
-Author: Paul Mulliganiel
+Site Name:
+Author:
 
 Stylesheet: Tablet & Small Desktop Stylesheet
 
@@ -2147,18 +2143,25 @@ come into play. Have fun!
 
 ******************************************************************/
   /*********************
+GENERAL STYLES
+*********************/
+  /*********************
 LAYOUT & GRID STYLES
 *********************/
   .wrap {
     width: 760px;
-    margin-left: 0;
   }
+  /*********************
+HEADER STYLES
+*********************/
   /*********************
 NAVIGATION STYLES
 *********************/
   .nav {
     border: 0;
     /* end .menu ul li */
+    /* highlight current page */
+    /* end current highlighters */
   }
   .nav ul {
     background: #323944;
@@ -2191,6 +2194,7 @@ NAVIGATION STYLES
     position: absolute;
     visibility: hidden;
     z-index: 8999;
+    /* highlight sub-menu current page */
   }
   .nav li ul.sub-menu li,
   .nav li ul.children li {
@@ -2238,11 +2242,39 @@ SIDEBARS & ASIDES
   }
   .widget ul li {
     margin-bottom: 0.75em;
+    /* deep nesting */
   }
   .widget ul li ul {
     margin-top: 0.75em;
     padding-left: 1em;
   }
+  /* links widget */
+  /* meta widget */
+  /* pages widget */
+  /* recent-posts widget */
+  /* archives widget */
+  /* tag-cloud widget */
+  /* calendar widget */
+  /* category widget */
+  /* recent-comments widget */
+  /* search widget */
+  /* text widget */
+  /*********************
+FOOTER STYLES
+*********************/
+  /*
+you'll probably need to do quite a bit
+of overriding here if you styled them for
+mobile. Make sure to double check these!
+*/
+  .footer-links ul li {
+    /*
+			be careful with the depth of your menus.
+			it's very rare to have multi-depth menus in
+			the footer.
+			*/
+  }
+  /* end .footer-links */
 }
 
 /*********************
@@ -2263,85 +2295,38 @@ be seen on the Desktop.
 
 ******************************************************************/
   .wrap {
-    width: 96%;
+    width: 100%;
     margin: 0 2em;
   }
-  #archive-article .article-header img {
-    width: 600px;
-    height: 200px;
-  }
-  #archive-article .entry-content img {
-    width: 600px;
-    height: 200px;
-  }
-  #archive-article .entry-content p {
-    max-width: 600px;
-  }
-  #content .main {
+  #main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  #content .main .landing-post {
-    margin-right: 4.5em;
-    width: 630px;
-  }
-  #content .main .landing-post .index-article .article-header img {
-    width: 99%;
-    height: auto;
-  }
-  #content .main .landing-post .index-article .article-header .entry-content p {
-    width: 99%;
-    max-width: 99%;
-  }
-  #content .main .post-article {
-    width: 1100px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #content .main .post-article .article-header img {
-    width: 900px;
-    height: auto;
-    opacity: unset;
-  }
-  #content .main .post-article .article-header .entry-title {
-    position: unset;
-    top: unset;
-  }
-  #content .main .post-article .entry-content {
-    width: 900px;
-  }
-  .header #inner-header a img {
-    max-width: 72.9%;
-  }
-  #sidebar2 {
-    display: block;
-    position: absolute;
-    top: 0em;
-    right: 11em;
-  }
-  #sidebar2 .tag-cloud-link {
-    color: #f8f9fa;
-    font-size: 1em !important;
-    line-height: 1.5em;
-    padding-right: 0.5em;
-  }
   .landing-post {
     margin-right: 2em;
-    -ms-flex-preferred-size: 35%;
-        flex-basis: 35%;
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
   }
+}
+
+/*********************
+LARGE VIEWING SIZE
+This is for the larger monitors and possibly full screen viewers.
+*********************/
+@media only screen and (min-width: 1240px) {
+  /******************************************************************
+Site Name: 
+Author: 
+
+Stylesheet: Super Large Monitor Stylesheet
+
+You can add some advanced styles here if you like. This kicks in
+on larger screens.
+
+******************************************************************/
 }
 
 /*********************

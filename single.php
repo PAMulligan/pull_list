@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 			<div id="content">
 				<div id="inner-content" class="wrap cf">
-					<main id="main" class="m-all t-2of3 cf main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+					<main id="main" class="m-all t-2of3 d-5of7 cf main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-						<article id="post-<?php the_ID(); ?>" <?php post_class('cf post-article'); ?> role="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+						<article id="post-<?php the_ID(); ?>" <?php post_class('cf'); ?> role="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
               <header class="article-header">
                 <?php the_post_thumbnail('bones-thumb-300'); ?>
                 <h1 class="h2 entry-title"><?php the_title(); ?></h1>
@@ -39,7 +39,7 @@
                 ?>
               </section> <?php // end article section ?>
               <footer class="article-footer">
-                <?php printf( __( 'Filed under', 'bonestheme' ).': %1$s', get_the_category_list(', ') ); ?>
+                <?php printf( __( 'filed under', 'bonestheme' ).': %1$s', get_the_category_list(', ') ); ?>
                 <?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
               </footer> <?php // end article footer ?>
               <?php //comments_template(); ?>

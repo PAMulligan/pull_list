@@ -219,7 +219,7 @@ POSTS & CONTENT STYLES
 				
 				p {
 					// Magic number alert, this matches the header image.
-					max-width: 99%;
+					max-width: 300px;
 				}
 			}
 
@@ -633,10 +633,6 @@ SIDEBARS & ASIDES
 	input[type="search"] {
 		width: 85%;
 	}
-}
-
-#sidebar2 {
-	display: none;
 }
 
 	.no-widgets {

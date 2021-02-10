@@ -10,109 +10,16 @@ be seen on the Desktop.
 ******************************************************************/
 
 .wrap {
-  width: 96%;
+  width: 100%;
   margin: 0 2em;
 }
 
-#archive-article {
-  .article-header {
-    img {
-      width: 600px;
-      height: 200px;
-    }
-  }
-  .entry-content {
-    img {
-      width: 600px;
-      height: 200px;
-    }
-    p {
-      max-width: 600px;
-    }
-  }
-}
-
-#content {
-  .main {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-    .landing-post {
-      margin-right: 4.5em;
-      width: 630px;
-
-      .index-article {
-
-        .article-header {
-
-          img {
-            width: 99%;
-            height: auto;
-          }
-
-          .entry-content {
-
-            p {
-              width: 99%;
-              max-width: 99%;
-            }
-          }
-        }
-      }
-    }
-
-    .post-article {
-      width: 1100px;
-      display: flex;
-      flex-direction: column;
-
-      .article-header {
-
-        img {
-          width: 900px;
-          height: auto;
-          opacity: unset;
-        }
-
-        .entry-title {
-          position: unset;
-          top: unset;
-        }
-      }
-
-      .entry-content {
-        width: 900px;
-      }
-    }
-  }
-}
-
-.header {
-  #inner-header {
-    a {
-      img {
-        max-width: 72.9%;
-      }
-    }
-  }
-}
-
-#sidebar2 {
-  display: block;
-  position: absolute;
-  top: 0em;
-  right: 11em;
-
-  .tag-cloud-link {
-    color: $light-gray;
-    font-size: 1em !important;
-    line-height: 1.5em;
-    padding-right: 0.5em;
-  }
+#main {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .landing-post {
   margin-right: 2em;
-  flex-basis: 35%;
+  flex-basis: 45%;
 }

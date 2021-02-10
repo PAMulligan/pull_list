@@ -9,7 +9,7 @@
 							));
 							?>
 							<?php if ($comic_query->have_posts()) : while ($comic_query->have_posts()) : $comic_query->the_post(); ?>
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf index-article' ); ?> role="article">
+							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
 								<header class="article-header">
 									<?php the_post_thumbnail('bones-thumb-300'); ?>
 									<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
@@ -54,7 +54,7 @@
 							));
 							?>
 							<?php if ($music_query->have_posts()) : while ($music_query->have_posts()) : $music_query->the_post(); ?>
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf index-article' ); ?> role="article">
+							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
 								<header class="article-header">
 									<?php the_post_thumbnail('bones-thumb-300'); ?>
 									<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
