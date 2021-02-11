@@ -368,8 +368,9 @@ SIDEBARS & ASIDES
 }
 
 /******************************************************************
-Site Name:
-Author:
+Site Name: Pull List
+Author: Paul Mulliganiel
+Version: 1.2
 
 Stylesheet: Desktop Stylsheet
 
@@ -377,9 +378,12 @@ This is the desktop size. It's larger than an iPad so it will only
 be seen on the Desktop.
 
 ******************************************************************/
+body {
+  max-width: 100vw;
+}
+
 .wrap {
   width: 100%;
-  margin: 0 2em;
 }
 
 #main {
