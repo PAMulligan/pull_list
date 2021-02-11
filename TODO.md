@@ -5,7 +5,7 @@
 ### Structure
 
 - ~~Integrate graphic assets into Bones theme~~
-- Clean out non-essential code
+- ~~Clean out non-essential code~~
 - Code pages for:
   - ~~Landing~~
   - ~~Blog post~~
@@ -14,6 +14,6 @@
 
 ### Style
 
-1. Style for mobile
-2. Style for tablet
-3. Style for desktop
+1. ~~Style for mobile~~
+2. ~~Style for tablet~~
+3. ~~Style for desktop~~
