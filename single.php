@@ -1,20 +1,20 @@
 <?php get_header(); ?>
 			<div id="content">
-				<div id="inner-content" class="wrap cf">
-					<main id="main" class="m-all t-2of3 d-5of7 cf main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+				<div id="inner-content">
+					<main id="main" class="t-2of3 d-5of7" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-						<article id="post-<?php the_ID(); ?>" <?php post_class('cf'); ?> role="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> role="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
               <header class="article-header">
-                <?php the_post_thumbnail('bones-thumb-300'); ?>
+                <?php the_post_thumbnail('full') ?>
                 <h1 class="h2 entry-title"><?php the_title(); ?></h1>
-                <p class="byline entry-meta vcard">
+                <p class="byline">
               		<?php printf( __( 'Posted', 'bonestheme' ).' %1$s',
                     /* the time the post was published */
                     '<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . '</time>'
                   ); ?>
                 </p>
               </header> <?php // end article header ?>
-              <section class="entry-content cf" itemprop="articleBody">
+              <section class="entry-content" itemprop="articleBody">
                 <?php
                   // the content (pretty self explanatory huh)
                   the_content();
@@ -39,14 +39,14 @@
                 ?>
               </section> <?php // end article section ?>
               <footer class="article-footer">
-                <?php printf( __( 'filed under', 'bonestheme' ).': %1$s', get_the_category_list(', ') ); ?>
+                <?php printf( __( 'Filed under', 'bonestheme' ).': %1$s', get_the_category_list(', ') ); ?>
                 <?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
               </footer> <?php // end article footer ?>
               <?php //comments_template(); ?>
             </article> <?php // end article ?>
 						<?php endwhile; ?>
 						<?php else : ?>
-							<article id="post-not-found" class="hentry cf">
+							<article id="post-not-found" class="hentry">
 								<header class="article-header">
 									<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
 								</header>
