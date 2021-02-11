@@ -1,10 +1,9 @@
 <?php get_header(); ?>
 			<div id="content">
 				<div id="inner-content">
-						<main id="main" class="t-2of3 d-5of7" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+						<main id="main" class="t-2of3 d-all" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 							<?php
 							the_archive_title( '<h1 class="page-title">', '</h1>' );
-							the_archive_description( '<div class="taxonomy-description">', '</div>' );
 							?>							
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> role="article">

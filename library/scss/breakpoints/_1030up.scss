@@ -38,10 +38,6 @@ body {
   }
 }
 
-#content {
-  margin-top: 0;
-}
-
 .wrap {
   width: 100%;
 }
@@ -51,28 +47,41 @@ body {
 }
 
 #content {
+  margin-top: 0;
 
   #main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
+    padding-left: 0;
+
+    .page-title {
+      margin: 0 auto;
+      flex-basis: 100%;
+      align-self: center;
+      justify-self: center;
+    }
+
+    article {
+      flex-basis: 40%;
+      margin: 0 1em;
+    }
 
     .landing-post {
-      margin-right: 2em;
       flex-basis: 45%;
-    
+
       .hentry {
-    
+
         .article-header {
           .mobile-img {
             display: none;
           }
-    
+
           .tablet-img {
             display: block;
           }
-    
+
           .desktop-img {
             display: none;
           }

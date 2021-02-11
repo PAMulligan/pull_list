@@ -2256,14 +2256,14 @@ be seen on the Desktop.
   .header #inner-header #primary-menu {
     margin: 1em 0.5em;
   }
-  #content {
-    margin-top: 0;
-  }
   .wrap {
     width: 100%;
   }
   #sidebar1 {
     padding-left: 0;
+  }
+  #content {
+    margin-top: 0;
   }
   #content #main {
     display: -webkit-box;
@@ -2278,9 +2278,24 @@ be seen on the Desktop.
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    padding-left: 0;
+  }
+  #content #main .page-title {
+    margin: 0 auto;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  #content #main article {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    margin: 0 1em;
   }
   #content #main .landing-post {
-    margin-right: 2em;
     -ms-flex-preferred-size: 45%;
         flex-basis: 45%;
   }
