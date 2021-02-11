@@ -248,8 +248,9 @@ do they need tweaking?
 */
 /* end .footer-links */
 /******************************************************************
-Site Name:
-Author:
+Site Name: Pull List
+Author: Paul Mulliganiel
+Version: 1.2
 
 Stylesheet: Tablet & Small Desktop Stylesheet
 
@@ -261,26 +262,11 @@ come into play. Have fun!
 
 ******************************************************************/
 /*********************
-GENERAL STYLES
-*********************/
-/*********************
-LAYOUT & GRID STYLES
-*********************/
-.wrap {
-  width: 760px;
-}
-
-/*********************
-HEADER STYLES
-*********************/
-/*********************
 NAVIGATION STYLES
 *********************/
 .nav {
   border: 0;
   /* end .menu ul li */
-  /* highlight current page */
-  /* end current highlighters */
 }
 
 .nav ul {
@@ -318,7 +304,6 @@ NAVIGATION STYLES
   position: absolute;
   visibility: hidden;
   z-index: 8999;
-  /* highlight sub-menu current page */
 }
 
 .nav li ul.sub-menu li,
@@ -360,7 +345,7 @@ NAVIGATION STYLES
 SIDEBARS & ASIDES
 *********************/
 .sidebar {
-  margin-top: 2.2em;
+  padding-top: 0;
 }
 
 .widgettitle {
@@ -370,12 +355,11 @@ SIDEBARS & ASIDES
 
 .widget {
   padding: 0 10px;
-  margin: 2.2em 0;
+  margin: 0.65em 0;
 }
 
 .widget ul li {
   margin-bottom: 0.75em;
-  /* deep nesting */
 }
 
 .widget ul li ul {
@@ -383,34 +367,6 @@ SIDEBARS & ASIDES
   padding-left: 1em;
 }
 
-/* links widget */
-/* meta widget */
-/* pages widget */
-/* recent-posts widget */
-/* archives widget */
-/* tag-cloud widget */
-/* calendar widget */
-/* category widget */
-/* recent-comments widget */
-/* search widget */
-/* text widget */
-/*********************
-FOOTER STYLES
-*********************/
-/*
-you'll probably need to do quite a bit
-of overriding here if you styled them for
-mobile. Make sure to double check these!
-*/
-.footer-links ul li {
-  /*
-			be careful with the depth of your menus.
-			it's very rare to have multi-depth menus in
-			the footer.
-			*/
-}
-
-/* end .footer-links */
 /******************************************************************
 Site Name:
 Author:
