@@ -389,6 +389,7 @@ body {
 }
 
 .header #inner-header #sidebar2 {
+  display: inline;
   width: 25%;
   float: right;
   padding-left: 0;
