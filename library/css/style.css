@@ -2318,6 +2318,18 @@ be seen on the Desktop.
   #content .archive-main .hentry .tablet-img {
     display: block !important;
   }
+  #content #inner-content .single-main {
+    display: block;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  #content #inner-content .single-main .hentry .article-header {
+    text-align: center;
+  }
+  #content #inner-content .single-main .hentry .article-header img {
+    max-width: 900px;
+    height: auto;
+  }
 }
 
 /*********************

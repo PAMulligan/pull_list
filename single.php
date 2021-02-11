@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 			<div id="content">
 				<div id="inner-content">
-					<main id="main" class="t-2of3 d-5of7" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+					<main id="main" class="t-2of3 d-all single-main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> role="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
               <header class="article-header">
