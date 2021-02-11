@@ -58,7 +58,9 @@
 							<?php if ($music_query->have_posts()) : while ($music_query->have_posts()) : $music_query->the_post(); ?>
 							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> role="article">
 								<header class="article-header">
-									<?php the_post_thumbnail('bones-thumb-300'); ?>
+									<?php the_post_thumbnail('bones-thumb-300', 'class=mobile-img'); ?>
+									<?php the_post_thumbnail('bones-thumb-600', 'class=tablet-img'); ?>
+									<?php the_post_thumbnail('bones-thumb-900', 'class=desktop-img'); ?>
 									<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
 									<p class="byline">
 										<?php printf( __( 'Posted', 'bonestheme' ).' %1$s',

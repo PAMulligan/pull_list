@@ -2248,28 +2248,50 @@ be seen on the Desktop.
     margin: 1em 0 0 1em;
     border-radius: 0.5em;
   }
-  #sidebar2 {
+  .header #inner-header #sidebar2 {
     width: 25%;
     float: right;
     padding-left: 0;
   }
-  #primary-menu {
+  .header #inner-header #primary-menu {
     margin: 1em 0.5em;
+  }
+  #content {
+    margin-top: 0;
   }
   .wrap {
     width: 100%;
   }
-  #main {
+  #sidebar1 {
+    padding-left: 0;
+  }
+  #content #main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
-  .landing-post {
+  #content #main .landing-post {
     margin-right: 2em;
     -ms-flex-preferred-size: 45%;
         flex-basis: 45%;
+  }
+  #content #main .landing-post .hentry .article-header .mobile-img {
+    display: none;
+  }
+  #content #main .landing-post .hentry .article-header .tablet-img {
+    display: block;
+  }
+  #content #main .landing-post .hentry .article-header .desktop-img {
+    display: none;
   }
 }
 
