@@ -2307,8 +2307,8 @@ be seen on the Desktop.
     margin: 0 1em;
   }
   #content #main .landing-post {
-    -ms-flex-preferred-size: 45%;
-        flex-basis: 45%;
+    -ms-flex-preferred-size: 47.3%;
+        flex-basis: 47.3%;
   }
   #content #main .landing-post .hentry .article-header .mobile-img {
     display: none;
