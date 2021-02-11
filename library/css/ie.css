@@ -427,7 +427,7 @@ body {
 }
 
 #content #main .page-title {
-  margin: 0 auto;
+  margin: 0em 0 1em 0.5em;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   -ms-flex-item-align: center;
@@ -458,6 +458,19 @@ body {
 
 #content #main .landing-post .hentry .article-header .desktop-img {
   display: none;
+}
+
+#content .archive-main .hentry {
+  -ms-flex-preferred-size: 45% !important;
+      flex-basis: 45% !important;
+}
+
+#content .archive-main .hentry .mobile-img {
+  display: none;
+}
+
+#content .archive-main .hentry .tablet-img {
+  display: block !important;
 }
 
 /*

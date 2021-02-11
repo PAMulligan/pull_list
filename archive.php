@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 			<div id="content">
 				<div id="inner-content">
-						<main id="main" class="t-2of3 d-all" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+						<main id="main" class="t-2of3 d-all archive-main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 							<?php
 							the_archive_title( '<h1 class="page-title">', '</h1>' );
 							?>							
