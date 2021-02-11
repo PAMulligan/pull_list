@@ -1532,6 +1532,7 @@ POSTS & CONTENT STYLES
   background-color: #fff;
   border-radius: 3px;
   margin-bottom: 1.5em;
+  max-width: 100%;
 }
 
 #content #main .hentry header {
@@ -1544,6 +1545,11 @@ POSTS & CONTENT STYLES
 
 #content #main .hentry header .desktop-img {
   display: none;
+}
+
+#content #main .hentry header img {
+  max-width: 100%;
+  height: auto;
 }
 
 #content #main .hentry footer {
@@ -1934,6 +1940,10 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
+#sidebar2 {
+  display: none;
+}
+
 .sidebar {
   color: #f8f9fa;
   padding: 1em;
@@ -2249,6 +2259,7 @@ be seen on the Desktop.
     border-radius: 0.5em;
   }
   .header #inner-header #sidebar2 {
+    display: inline;
     width: 25%;
     float: right;
     padding-left: 0;
@@ -2296,8 +2307,8 @@ be seen on the Desktop.
     margin: 0 1em;
   }
   #content #main .landing-post {
-    -ms-flex-preferred-size: 45%;
-        flex-basis: 45%;
+    -ms-flex-preferred-size: 47.3%;
+        flex-basis: 47.3%;
   }
   #content #main .landing-post .hentry .article-header .mobile-img {
     display: none;

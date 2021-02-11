@@ -191,6 +191,7 @@ POSTS & CONTENT STYLES
 			background-color: $white;
 			border-radius: 3px;
 			margin-bottom: 1.5em;
+			max-width: 100%;
 
 			header {
 				padding: 1.5em;
@@ -201,6 +202,11 @@ POSTS & CONTENT STYLES
 
 				.desktop-img {
 					display: none;
+				}
+
+				img {
+					max-width: 100%;
+					height: auto;
 				}
 			}
 
@@ -612,6 +618,11 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
+
+// Invisible on mobile and tablet
+#sidebar2 {
+	display: none;
+}
 
 .sidebar {
 	color: $light-gray;
