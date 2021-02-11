@@ -248,8 +248,9 @@ do they need tweaking?
 */
 /* end .footer-links */
 /******************************************************************
-Site Name:
-Author:
+Site Name: Pull List
+Author: Paul Mulliganiel
+Version: 1.2
 
 Stylesheet: Tablet & Small Desktop Stylesheet
 
@@ -261,26 +262,11 @@ come into play. Have fun!
 
 ******************************************************************/
 /*********************
-GENERAL STYLES
-*********************/
-/*********************
-LAYOUT & GRID STYLES
-*********************/
-.wrap {
-  width: 760px;
-}
-
-/*********************
-HEADER STYLES
-*********************/
-/*********************
 NAVIGATION STYLES
 *********************/
 .nav {
   border: 0;
   /* end .menu ul li */
-  /* highlight current page */
-  /* end current highlighters */
 }
 
 .nav ul {
@@ -318,7 +304,6 @@ NAVIGATION STYLES
   position: absolute;
   visibility: hidden;
   z-index: 8999;
-  /* highlight sub-menu current page */
 }
 
 .nav li ul.sub-menu li,
@@ -360,7 +345,7 @@ NAVIGATION STYLES
 SIDEBARS & ASIDES
 *********************/
 .sidebar {
-  margin-top: 2.2em;
+  padding-top: 0;
 }
 
 .widgettitle {
@@ -370,12 +355,11 @@ SIDEBARS & ASIDES
 
 .widget {
   padding: 0 10px;
-  margin: 2.2em 0;
+  margin: 0.65em 0;
 }
 
 .widget ul li {
   margin-bottom: 0.75em;
-  /* deep nesting */
 }
 
 .widget ul li ul {
@@ -383,37 +367,10 @@ SIDEBARS & ASIDES
   padding-left: 1em;
 }
 
-/* links widget */
-/* meta widget */
-/* pages widget */
-/* recent-posts widget */
-/* archives widget */
-/* tag-cloud widget */
-/* calendar widget */
-/* category widget */
-/* recent-comments widget */
-/* search widget */
-/* text widget */
-/*********************
-FOOTER STYLES
-*********************/
-/*
-you'll probably need to do quite a bit
-of overriding here if you styled them for
-mobile. Make sure to double check these!
-*/
-.footer-links ul li {
-  /*
-			be careful with the depth of your menus.
-			it's very rare to have multi-depth menus in
-			the footer.
-			*/
-}
-
-/* end .footer-links */
 /******************************************************************
-Site Name:
-Author:
+Site Name: Pull List
+Author: Paul Mulliganiel
+Version: 1.2
 
 Stylesheet: Desktop Stylsheet
 
@@ -421,23 +378,114 @@ This is the desktop size. It's larger than an iPad so it will only
 be seen on the Desktop.
 
 ******************************************************************/
-.wrap {
-  width: 100%;
-  margin: 0 2em;
+body {
+  max-width: 100vw;
 }
 
-#main {
+.header #inner-header a img {
+  max-width: 70%;
+  margin: 1em 0 0 1em;
+  border-radius: 0.5em;
+}
+
+.header #inner-header #sidebar2 {
+  width: 25%;
+  float: right;
+  padding-left: 0;
+}
+
+.header #inner-header #primary-menu {
+  margin: 1em 0.5em;
+}
+
+.wrap {
+  width: 100%;
+}
+
+#sidebar1 {
+  padding-left: 0;
+}
+
+#content {
+  margin-top: 0;
+}
+
+#content #main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding-left: 0;
 }
 
-.landing-post {
-  margin-right: 2em;
+#content #main .page-title {
+  margin: 0em 0 1em 0.5em;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+#content #main article {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  margin: 0 1em;
+}
+
+#content #main .landing-post {
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
+}
+
+#content #main .landing-post .hentry .article-header .mobile-img {
+  display: none;
+}
+
+#content #main .landing-post .hentry .article-header .tablet-img {
+  display: block;
+}
+
+#content #main .landing-post .hentry .article-header .desktop-img {
+  display: none;
+}
+
+#content .archive-main .hentry {
+  -ms-flex-preferred-size: 45% !important;
+      flex-basis: 45% !important;
+}
+
+#content .archive-main .hentry .mobile-img {
+  display: none;
+}
+
+#content .archive-main .hentry .tablet-img {
+  display: block !important;
+}
+
+#content #inner-content .single-main {
+  display: block;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#content #inner-content .single-main .hentry .article-header {
+  text-align: center;
+}
+
+#content #inner-content .single-main .hentry .article-header img {
+  max-width: 900px;
+  height: auto;
 }
 
 /*

@@ -706,7 +706,6 @@ them however you see fit.
     float: left;
     padding-right: 0.75em;
     width: 100%;
-    padding-right: 0;
   }
   .m-1of2 {
     float: left;
@@ -1355,6 +1354,7 @@ the other stylesheets. Remember, keep it light: Speed is Important.
 /******************************************************************
 Site Name: Pull List
 Author: Paul Mulliganiel
+Version: 1.2
 
 Stylesheet: Base Mobile Stylesheet
 
@@ -1382,20 +1382,20 @@ LAYOUT & GRID STYLES
 *********************/
 .wrap {
   width: 100%;
-  margin: 0 auto;
 }
 
 /*********************
 LINK STYLES
 *********************/
 a, a:visited {
-  color: #f01d4f;
+  color: #ebe16f;
+  text-decoration: none;
   /* on hover */
   /* mobile tap color */
 }
 
 a:hover, a:focus, a:visited:hover, a:visited:focus {
-  color: #d10e3c;
+  color: #e5d947;
 }
 
 a:link, a:visited:link {
@@ -1459,7 +1459,7 @@ HEADER STYLES
 }
 
 .header #inner-header a img {
-  max-width: 100vw;
+  max-width: 100%;
 }
 
 /*********************
@@ -1514,7 +1514,7 @@ POSTS & CONTENT STYLES
   margin-top: 1.5em;
 }
 
-#content .main {
+#content #main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1525,7 +1525,34 @@ POSTS & CONTENT STYLES
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  justify-items: center;
+  padding: 1em;
+}
+
+#content #main .hentry {
+  background-color: #fff;
+  border-radius: 3px;
+  margin-bottom: 1.5em;
+}
+
+#content #main .hentry header {
+  padding: 1.5em;
+}
+
+#content #main .hentry header .tablet-img {
+  display: none;
+}
+
+#content #main .hentry header .desktop-img {
+  display: none;
+}
+
+#content #main .hentry footer {
+  padding: 1.5em;
+  color: #323944;
+}
+
+#content #main .hentry footer p {
+  margin: 0;
 }
 
 #content .taxonomy-description {
@@ -1533,47 +1560,6 @@ POSTS & CONTENT STYLES
   color: #f8f9fa;
 }
 
-.hentry {
-  background-color: #fff;
-  border-radius: 3px;
-  margin-bottom: 1.5em;
-  border: 1px solid #ccc;
-}
-
-.hentry header {
-  border-bottom: 1px solid #f8f9fa;
-  padding: 1.5em;
-  position: relative;
-}
-
-.hentry header img {
-  opacity: 0.5;
-}
-
-.hentry header .entry-title {
-  position: absolute;
-  top: 2em;
-}
-
-.hentry .entry-content {
-  color: #323944;
-}
-
-.hentry .entry-content p {
-  max-width: 300px;
-}
-
-.hentry footer {
-  padding: 1.5em;
-  border-top: 1px solid #f8f9fa;
-  color: #323944;
-}
-
-.hentry footer p {
-  margin: 0;
-}
-
-/* end .hentry */
 .single-title,
 .page-title,
 .entry-title {
@@ -1595,6 +1581,7 @@ POSTS & CONTENT STYLES
 /* entry content */
 .entry-content {
   padding: 1.5em 1.5em 0;
+  color: #323944;
 }
 
 .entry-content p {
@@ -2130,8 +2117,9 @@ you can add resource intensive styles.
 *********************/
 @media only screen and (min-width: 768px) {
   /******************************************************************
-Site Name:
-Author:
+Site Name: Pull List
+Author: Paul Mulliganiel
+Version: 1.2
 
 Stylesheet: Tablet & Small Desktop Stylesheet
 
@@ -2143,25 +2131,11 @@ come into play. Have fun!
 
 ******************************************************************/
   /*********************
-GENERAL STYLES
-*********************/
-  /*********************
-LAYOUT & GRID STYLES
-*********************/
-  .wrap {
-    width: 760px;
-  }
-  /*********************
-HEADER STYLES
-*********************/
-  /*********************
 NAVIGATION STYLES
 *********************/
   .nav {
     border: 0;
     /* end .menu ul li */
-    /* highlight current page */
-    /* end current highlighters */
   }
   .nav ul {
     background: #323944;
@@ -2194,7 +2168,6 @@ NAVIGATION STYLES
     position: absolute;
     visibility: hidden;
     z-index: 8999;
-    /* highlight sub-menu current page */
   }
   .nav li ul.sub-menu li,
   .nav li ul.children li {
@@ -2230,7 +2203,7 @@ NAVIGATION STYLES
 SIDEBARS & ASIDES
 *********************/
   .sidebar {
-    margin-top: 2.2em;
+    padding-top: 0;
   }
   .widgettitle {
     border-bottom: 2px solid #444;
@@ -2238,43 +2211,15 @@ SIDEBARS & ASIDES
   }
   .widget {
     padding: 0 10px;
-    margin: 2.2em 0;
+    margin: 0.65em 0;
   }
   .widget ul li {
     margin-bottom: 0.75em;
-    /* deep nesting */
   }
   .widget ul li ul {
     margin-top: 0.75em;
     padding-left: 1em;
   }
-  /* links widget */
-  /* meta widget */
-  /* pages widget */
-  /* recent-posts widget */
-  /* archives widget */
-  /* tag-cloud widget */
-  /* calendar widget */
-  /* category widget */
-  /* recent-comments widget */
-  /* search widget */
-  /* text widget */
-  /*********************
-FOOTER STYLES
-*********************/
-  /*
-you'll probably need to do quite a bit
-of overriding here if you styled them for
-mobile. Make sure to double check these!
-*/
-  .footer-links ul li {
-    /*
-			be careful with the depth of your menus.
-			it's very rare to have multi-depth menus in
-			the footer.
-			*/
-  }
-  /* end .footer-links */
 }
 
 /*********************
@@ -2285,8 +2230,9 @@ you can add resource intensive styles.
 *********************/
 @media only screen and (min-width: 1030px) {
   /******************************************************************
-Site Name:
-Author:
+Site Name: Pull List
+Author: Paul Mulliganiel
+Version: 1.2
 
 Stylesheet: Desktop Stylsheet
 
@@ -2294,39 +2240,96 @@ This is the desktop size. It's larger than an iPad so it will only
 be seen on the Desktop.
 
 ******************************************************************/
+  body {
+    max-width: 100vw;
+  }
+  .header #inner-header a img {
+    max-width: 70%;
+    margin: 1em 0 0 1em;
+    border-radius: 0.5em;
+  }
+  .header #inner-header #sidebar2 {
+    width: 25%;
+    float: right;
+    padding-left: 0;
+  }
+  .header #inner-header #primary-menu {
+    margin: 1em 0.5em;
+  }
   .wrap {
     width: 100%;
-    margin: 0 2em;
   }
-  #main {
+  #sidebar1 {
+    padding-left: 0;
+  }
+  #content {
+    margin-top: 0;
+  }
+  #content #main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    padding-left: 0;
   }
-  .landing-post {
-    margin-right: 2em;
+  #content #main .page-title {
+    margin: 0em 0 1em 0.5em;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  #content #main article {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    margin: 0 1em;
+  }
+  #content #main .landing-post {
     -ms-flex-preferred-size: 45%;
         flex-basis: 45%;
   }
-}
-
-/*********************
-LARGE VIEWING SIZE
-This is for the larger monitors and possibly full screen viewers.
-*********************/
-@media only screen and (min-width: 1240px) {
-  /******************************************************************
-Site Name: 
-Author: 
-
-Stylesheet: Super Large Monitor Stylesheet
-
-You can add some advanced styles here if you like. This kicks in
-on larger screens.
-
-******************************************************************/
+  #content #main .landing-post .hentry .article-header .mobile-img {
+    display: none;
+  }
+  #content #main .landing-post .hentry .article-header .tablet-img {
+    display: block;
+  }
+  #content #main .landing-post .hentry .article-header .desktop-img {
+    display: none;
+  }
+  #content .archive-main .hentry {
+    -ms-flex-preferred-size: 45% !important;
+        flex-basis: 45% !important;
+  }
+  #content .archive-main .hentry .mobile-img {
+    display: none;
+  }
+  #content .archive-main .hentry .tablet-img {
+    display: block !important;
+  }
+  #content #inner-content .single-main {
+    display: block;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  #content #inner-content .single-main .hentry .article-header {
+    text-align: center;
+  }
+  #content #inner-content .single-main .hentry .article-header img {
+    max-width: 900px;
+    height: auto;
+  }
 }
 
 /*********************

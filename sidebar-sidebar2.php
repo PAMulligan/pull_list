@@ -1,6 +1,6 @@
-				<div id="sidebar1" class="sidebar m-all t-1of3 d-all" role="complementary">
-					<?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
-						<?php dynamic_sidebar( 'sidebar1' ); ?>
+				<div id="sidebar2" class="sidebar m-all t-1of3" role="complementary">
+					<?php if ( is_active_sidebar( 'sidebar2' ) ) : ?>
+						<?php dynamic_sidebar( 'sidebar2' ); ?>
 					<?php else : ?>
 						<?php
 							/*

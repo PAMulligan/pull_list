@@ -73,6 +73,7 @@ if ( ! isset( $content_width ) ) {
 /************* THUMBNAIL SIZE OPTIONS *************/
 
 // Thumbnail sizes
+add_image_size( 'bones-thumb-900', 900, 200, true );
 add_image_size( 'bones-thumb-600', 600, 150, true );
 add_image_size( 'bones-thumb-300', 300, 100, true );
 
@@ -100,6 +101,7 @@ add_filter( 'image_size_names_choose', 'bones_custom_image_sizes' );
 
 function bones_custom_image_sizes( $sizes ) {
     return array_merge( $sizes, array(
+        'bones-thumb-900' => __('900px by 200px'),
         'bones-thumb-600' => __('600px by 150px'),
         'bones-thumb-300' => __('300px by 100px'),
     ) );
@@ -170,7 +172,7 @@ function bones_register_sidebars() {
 	your new sidebar just use the following code:
 
 	Just change the name to whatever your new
-	sidebar's id is, for example:
+	sidebar's id is, for example:*/
 
 	register_sidebar(array(
 		'id' => 'sidebar2',
@@ -182,7 +184,7 @@ function bones_register_sidebars() {
 		'after_title' => '</h4>',
 	));
 
-	To call the sidebar in your template, you can just copy
+	/*To call the sidebar in your template, you can just copy
 	the sidebar.php file and rename it to your sidebar's name.
 	So using the above example, it would be:
 	sidebar-sidebar2.php

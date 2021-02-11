@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 			<div id="content">
-				<div id="inner-content" class="wrap cf">
-					<main id="main" class="m-all t-2of3 d-all cf main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+				<div id="inner-content">
+					<main id="main" class="t-2of3 d-all" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 						<div class="landing-post">
 							<?php $comic_query = new WP_Query(array(
 								'posts_per_page' => 5,
@@ -9,32 +9,34 @@
 							));
 							?>
 							<?php if ($comic_query->have_posts()) : while ($comic_query->have_posts()) : $comic_query->the_post(); ?>
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
+							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> role="article">
 								<header class="article-header">
-									<?php the_post_thumbnail('bones-thumb-300'); ?>
+									<?php the_post_thumbnail('bones-thumb-300', 'class=mobile-img'); ?>
+									<?php the_post_thumbnail('bones-thumb-600', 'class=tablet-img'); ?>
+									<?php the_post_thumbnail('bones-thumb-900', 'class=desktop-img'); ?>
 									<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-									<p class="byline entry-meta vcard">
+									<p class="byline">
 										<?php printf( __( 'Posted', 'bonestheme' ).' %1$s',
-																				/* the time the post was published */
-																				'<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . '</time>'
+											/* the time the post was published */
+											'<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . '</time>'
 										); ?>
 									</p>
 								</header>
-								<section class="entry-content cf" itemprop="articleBody">
+								<section class="entry-content" itemprop="articleBody">
 									<?php the_content(); ?>
 								</section>
-								<footer class="article-footer cf">
+								<footer class="article-footer">
 									<p class="footer-comment-count">
 										<?php comments_number( __( '<span>No</span> Comments', 'bonestheme' ), __( '<span>One</span> Comment', 'bonestheme' ), __( '<span>%</span> Comments', 'bonestheme' ) );?>
 									</p>
-										<?php printf( '<p class="footer-category">' . __('filed under', 'bonestheme' ) . ': %1$s</p>' , get_the_category_list(', ') ); ?>
+										<?php printf( '<p class="footer-category">' . __('Filed under', 'bonestheme' ) . ': %1$s</p>' , get_the_category_list(', ') ); ?>
 										<?php the_tags( '<p class="footer-tags tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
 								</footer>
 							</article>
 							<?php endwhile; ?>
 									<?php bones_page_navi(); ?>
 							<?php else : ?>
-									<article id="post-not-found" class="hentry cf">
+									<article id="post-not-found" class="hentry">
 											<header class="article-header">
 												<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
 										</header>
@@ -54,21 +56,23 @@
 							));
 							?>
 							<?php if ($music_query->have_posts()) : while ($music_query->have_posts()) : $music_query->the_post(); ?>
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
+							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> role="article">
 								<header class="article-header">
-									<?php the_post_thumbnail('bones-thumb-300'); ?>
+									<?php the_post_thumbnail('bones-thumb-300', 'class=mobile-img'); ?>
+									<?php the_post_thumbnail('bones-thumb-600', 'class=tablet-img'); ?>
+									<?php the_post_thumbnail('bones-thumb-900', 'class=desktop-img'); ?>
 									<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-									<p class="byline entry-meta vcard">
+									<p class="byline">
 										<?php printf( __( 'Posted', 'bonestheme' ).' %1$s',
 																				/* the time the post was published */
 																				'<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . '</time>'
 										); ?>
 									</p>
 								</header>
-								<section class="entry-content cf">
+								<section class="entry-content">
 									<?php the_content(); ?>
 								</section>
-								<footer class="article-footer cf">
+								<footer class="article-footer">
 									<p class="footer-comment-count">
 										<?php comments_number( __( '<span>No</span> Comments', 'bonestheme' ), __( '<span>One</span> Comment', 'bonestheme' ), __( '<span>%</span> Comments', 'bonestheme' ) );?>
 									</p>
@@ -79,7 +83,7 @@
 							<?php endwhile; ?>
 									<?php bones_page_navi(); ?>
 							<?php else : ?>
-									<article id="post-not-found" class="hentry cf">
+									<article id="post-not-found" class="hentry">
 											<header class="article-header">
 												<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
 										</header>
