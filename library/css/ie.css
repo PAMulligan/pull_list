@@ -489,6 +489,10 @@ body {
   height: auto;
 }
 
+.wp-block-image {
+  text-align: center;
+}
+
 /*
 you can call the larger styles if you want, but there's really no need
 */

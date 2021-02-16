@@ -2341,6 +2341,9 @@ be seen on the Desktop.
     max-width: 900px;
     height: auto;
   }
+  .wp-block-image {
+    text-align: center;
+  }
 }
 
 /*********************
