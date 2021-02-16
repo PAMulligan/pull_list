@@ -1,7 +1,8 @@
 <?php
 /*
-Author: Eddie Machado
-URL: http://themble.com/bones/
+Author: Paul Mulliganiel
+Version: 1.2
+URL: http://pull-list.net/
 
 This is where you can drop your custom functions or
 just edit things like thumbnail sizes, header images,
