@@ -34,7 +34,7 @@
 								</footer>
 							</article>
 							<?php endwhile; ?>
-									<?php bones_page_navi(); ?>
+									<?php pull_list_page_navi(); ?>
 							<?php else : ?>
 									<article id="post-not-found" class="hentry">
 											<header class="article-header">
@@ -81,7 +81,7 @@
 								</footer>
 							</article>
 							<?php endwhile; ?>
-									<?php bones_page_navi(); ?>
+									<?php pull_list_page_navi(); ?>
 							<?php else : ?>
 									<article id="post-not-found" class="hentry">
 											<header class="article-header">

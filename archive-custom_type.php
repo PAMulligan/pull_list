@@ -49,7 +49,7 @@
 
 							<?php endwhile; ?>
 
-									<?php bones_page_navi(); ?>
+									<?php pull_list_page_navi(); ?>
 
 							<?php else : ?>
 
