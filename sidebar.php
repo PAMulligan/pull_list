@@ -8,7 +8,7 @@
 							*/
 						?>
 						<div class="no-widgets">
-							<p><?php _e( 'This is a widget ready area. Add some and they will appear here.', 'bonestheme' );  ?></p>
+							<p><?php _e( 'This is a widget ready area. Add some and they will appear here.', 'pulllisttheme' );  ?></p>
 						</div>
 					<?php endif; ?>
 				</div>

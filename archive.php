@@ -13,7 +13,7 @@
 									<?php the_post_thumbnail('bones-thumb-900', 'class=desktop-img'); ?>
 									<h2 class="entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 									<p class="byline">
-										<?php printf( __( 'Posted', 'bonestheme' ).' %1$s', '<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . '</time>'); ?>
+										<?php printf( __( 'Posted', 'pulllisttheme' ).' %1$s', '<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . '</time>'); ?>
 									</p>
 								</header>
 								<section class="entry-content">
@@ -28,13 +28,13 @@
 							<?php else : ?>
 									<article id="post-not-found" class="hentry">
 										<header class="article-header">
-											<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
+											<h1><?php _e( 'Oops, Post Not Found!', 'pulllisttheme' ); ?></h1>
 										</header>
 										<section class="entry-content">
-											<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
+											<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'pulllisttheme' ); ?></p>
 										</section>
 										<footer class="article-footer">
-												<p><?php _e( 'This is the error message in the archive.php template.', 'bonestheme' ); ?></p>
+												<p><?php _e( 'This is the error message in the archive.php template.', 'pulllisttheme' ); ?></p>
 										</footer>
 									</article>
 							<?php endif; ?>

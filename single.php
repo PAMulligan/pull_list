@@ -8,7 +8,7 @@
                 <?php the_post_thumbnail('full') ?>
                 <h1 class="h2 entry-title"><?php the_title(); ?></h1>
                 <p class="byline">
-              		<?php printf( __( 'Posted', 'bonestheme' ).' %1$s',
+              		<?php printf( __( 'Posted', 'pulllisttheme' ).' %1$s',
                     /* the time the post was published */
                     '<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . '</time>'
                   ); ?>
@@ -31,7 +31,7 @@
                    *
                   */
                   wp_link_pages( array(
-                    'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'bonestheme' ) . '</span>',
+                    'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'pulllisttheme' ) . '</span>',
                       'after'       => '</div>',
                       'link_before' => '<span>',
                       'link_after'  => '</span>',
@@ -39,8 +39,8 @@
                 ?>
               </section> <?php // end article section ?>
               <footer class="article-footer">
-                <?php printf( __( 'Filed under', 'bonestheme' ).': %1$s', get_the_category_list(', ') ); ?>
-                <?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
+                <?php printf( __( 'Filed under', 'pulllisttheme' ).': %1$s', get_the_category_list(', ') ); ?>
+                <?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'pulllisttheme' ) . '</span> ', ', ', '</p>' ); ?>
               </footer> <?php // end article footer ?>
               <?php //comments_template(); ?>
             </article> <?php // end article ?>
@@ -48,13 +48,13 @@
 						<?php else : ?>
 							<article id="post-not-found" class="hentry">
 								<header class="article-header">
-									<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
+									<h1><?php _e( 'Oops, Post Not Found!', 'pulllisttheme' ); ?></h1>
 								</header>
 								<section class="entry-content">
-									<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
+									<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'pulllisttheme' ); ?></p>
 								</section>
 								<footer class="article-footer">
-										<p><?php _e( 'This is the error message in the single.php template.', 'bonestheme' ); ?></p>
+										<p><?php _e( 'This is the error message in the single.php template.', 'pulllisttheme' ); ?></p>
 								</footer>
 							</article>
 						<?php endif; ?>
