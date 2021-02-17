@@ -468,16 +468,16 @@ table {
   overflow: hidden;
 }
 
-.clearfix, .cf, .comment-respond {
+.clearfix, .cf {
   zoom: 1;
 }
 
-.clearfix:before, .clearfix:after, .cf:before, .comment-respond:before, .cf:after, .comment-respond:after {
+.clearfix:before, .clearfix:after, .cf:before, .cf:after {
   content: "";
   display: table;
 }
 
-.clearfix:after, .cf:after, .comment-respond:after {
+.clearfix:after, .cf:after {
   clear: both;
 }
 
@@ -578,51 +578,6 @@ p {
   font-feature-settings: "liga", "dlig";
 }
 
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: Sass Functions
-
-You can do a lot of really cool things in Sass. Functions help you
-make repeated actions a lot easier. They are really similar to mixins,
-but can be used for so much more.
-
-Anyway, keep them all in here so it's easier to find when you're
-looking for one.
-
-For more info on functions, go here:
-http://sass-lang.com/documentation/Sass/Script/Functions.html
-
-******************************************************************/
-/*********************
-COLOR FUNCTIONS
-These are helpful when you're working
-with shadows and such things. It's essentially
-a quicker way to write RGBA.
-
-Example:
-box-shadow: 0 0 4px black(0.3);
-compiles to:
-box-shadow: 0 0 4px rgba(0,0,0,0.3);
-*********************/
-/*********************
-RESPONSIVE HELPER FUNCTION
-If you're creating a responsive site, then
-you've probably already read
-Responsive Web Design: http://www.abookapart.com/products/responsive-web-design
-
-Here's a nice little helper function for calculating
-target / context
-as mentioned in that book.
-
-Example:
-width: cp(650px, 1000px);
-or
-width: calc-percent(650px, 1000px);
-both compile to:
-width: 65%;
-*********************/
 /******************************************************************
 Site Name:
 Author:
@@ -932,42 +887,6 @@ you hate oysters, then the world is your peanut butter & jelly sandwich.
 Site Name:
 Author:
 
-Stylesheet: Alert Styles
-
-If you want to use these alerts in your design, you can. If not,
-you can just remove this stylesheet.
-
-******************************************************************/
-.alert-help, .alert-info, .alert-error, .alert-success {
-  margin: 10px;
-  padding: 5px 18px;
-  border: 1px solid;
-}
-
-.alert-help {
-  border-color: #e8dc59;
-  background: #ebe16f;
-}
-
-.alert-info {
-  border-color: #bfe4f4;
-  background: #d5edf8;
-}
-
-.alert-error {
-  border-color: #f8cdce;
-  background: #fbe3e4;
-}
-
-.alert-success {
-  border-color: #deeaae;
-  background: #e6efc2;
-}
-
-/******************************************************************
-Site Name:
-Author:
-
 Stylesheet: Button Styles
 
 Buttons are a pretty important part of your site's style, so it's
@@ -988,7 +907,7 @@ Here's a quick video to show how it works:
 http://www.youtube.com/watch?v=hwdVpKiJzac
 
 *********************/
-.blue-btn, .comment-reply-link, #submit {
+.blue-btn {
   display: inline-block;
   position: relative;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1006,13 +925,13 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   transition: background-color 0.14s ease-in-out;
 }
 
-.blue-btn:hover, .comment-reply-link:hover, #submit:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus {
+.blue-btn:hover, .blue-btn:focus {
   color: #fff;
   text-decoration: none;
   outline: none;
 }
 
-.blue-btn:active, .comment-reply-link:active, #submit:active {
+.blue-btn:active {
   top: 1px;
 }
 
@@ -1021,22 +940,20 @@ An example button.
 You can use this example if you want. Just replace all the variables
 and it will create a button dependant on those variables.
 */
-.blue-btn, .comment-reply-link, #submit {
+.blue-btn {
   background-color: #ebe16f;
 }
 
-.blue-btn:hover, .comment-reply-link:hover, #submit:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus {
+.blue-btn:hover, .blue-btn:focus {
   background-color: #e9dd5d;
 }
 
-.blue-btn:active, .comment-reply-link:active, #submit:active {
+.blue-btn:active {
   background-color: #e8dc59;
 }
 
-.blue-btn a, .comment-reply-link a, #submit a,
-.blue-btn a:visited,
-.comment-reply-link a:visited,
-#submit a:visited {
+.blue-btn a,
+.blue-btn a:visited {
   color: #f01d4f;
   text-decoration: none;
 }
@@ -1768,175 +1685,6 @@ PAGE NAVI STYLES
 }
 
 /* end .wp-prev-next */
-/******************************************************************
-COMMENT STYLES
-******************************************************************/
-/* h3 comment title */
-#comments-title {
-  padding: 0.75em;
-  margin: 0;
-  border-top: 1px solid #f8f9fa;
-}
-
-.commentlist {
-  margin: 0;
-  list-style-type: none;
-}
-
-.comment {
-  position: relative;
-  clear: both;
-  overflow: hidden;
-  padding: 1.5em;
-  border-bottom: 1px solid #f8f9fa;
-  /* vcard */
-  /* end .commentlist .vcard */
-  /* end children */
-  /* general comment classes */
-}
-
-.comment .comment-author {
-  padding: 7px;
-  border: 0;
-}
-
-.comment .vcard {
-  margin-left: 50px;
-}
-
-.comment .vcard cite.fn {
-  font-weight: 700;
-  font-style: normal;
-}
-
-.comment .vcard time {
-  display: block;
-  font-size: 0.9em;
-  font-style: italic;
-}
-
-.comment .vcard time a {
-  color: #9fa6b4;
-  text-decoration: none;
-}
-
-.comment .vcard time a:hover {
-  text-decoration: underline;
-}
-
-.comment .vcard .avatar {
-  position: absolute;
-  left: 16px;
-  border-radius: 50%;
-}
-
-.comment:last-child {
-  margin-bottom: 0;
-}
-
-.comment .children {
-  margin: 0;
-}
-
-.comment[class*=depth-] {
-  margin-top: 1.1em;
-}
-
-.comment.depth-1 {
-  margin-left: 0;
-  margin-top: 0;
-}
-
-.comment:not(.depth-1) {
-  margin-top: 0;
-  margin-left: 7px;
-  padding: 7px;
-}
-
-.comment.odd {
-  background-color: #fff;
-}
-
-.comment.even {
-  background: #f8f9fa;
-}
-
-/* comment content */
-.comment_content p {
-  margin: 0.7335em 0 1.5em;
-  font-size: 1em;
-  line-height: 1.5em;
-}
-
-/* end .commentlist .comment_content */
-/* comment reply link */
-.comment-reply-link {
-  font-size: 0.9em;
-  float: right;
-}
-
-/* end .commentlist .comment-reply-link */
-/* edit comment link */
-.comment-edit-link {
-  font-style: italic;
-  margin: 0 7px;
-  text-decoration: none;
-  font-size: 0.9em;
-}
-
-/******************************************************************
-COMMENT FORM STYLES
-******************************************************************/
-.comment-respond {
-  padding: 1.5em;
-  border-top: 1px solid #f8f9fa;
-}
-
-#reply-title {
-  margin: 0;
-}
-
-.logged-in-as {
-  color: #9fa6b4;
-  font-style: italic;
-  margin: 0;
-}
-
-.logged-in-as a {
-  color: #5c6b80;
-}
-
-.comment-form-comment {
-  margin: 1.5em 0 0.75em;
-}
-
-.form-allowed-tags {
-  padding: 1.5em;
-  background-color: #f8f9fa;
-  font-size: 0.9em;
-}
-
-/* comment submit button */
-#submit {
-  float: right;
-  font-size: 1em;
-}
-
-/* comment form title */
-#comment-form-title {
-  margin: 0 0 1.1em;
-}
-
-/* allowed tags */
-#allowed_tags {
-  margin: 1.5em 10px 0.7335em 0;
-}
-
-/* no comments */
-.nocomments {
-  margin: 0 20px 1.1em;
-}
-
 /*********************
 SIDEBARS & ASIDES
 *********************/
@@ -2030,93 +1778,6 @@ FOOTER STYLES
   .menu-link {
     display: inline-block;
   }
-}
-
-/*********************
-LARGER MOBILE DEVICES
-This is for devices like the Galaxy Note or something that's
-larger than an iPhone but smaller than a tablet. Let's call them
-tweeners.
-*********************/
-@media only screen and (min-width: 481px) {
-  /******************************************************************
-Site Name:
-Author:
-
-Stylesheet: 481px and Up Stylesheet
-
-This stylesheet is loaded for larger devices. It's set to
-481px because at 480px it would load on a landscaped iPhone.
-This isn't ideal because then you would be loading all those
-extra styles on that same mobile connection.
-
-A word of warning. This size COULD be a larger mobile device,
-so you still want to keep it pretty light and simply expand
-upon your base.scss styles.
-
-******************************************************************/
-  /*
-IMPORTANT NOTE ABOUT SASS 3.3 & UP
-You can't use @extend within media queries
-anymore, so just be aware that if you drop
-them in here, they won't work.
-*/
-  /*********************
-NAVIGATION STYLES
-*********************/
-  /* .menu is clearfixed inside mixins.scss */
-  .menu {
-    /* end .menu ul */
-  }
-  .menu ul {
-    /* end .menu ul li */
-    /* highlight current page */
-    /* end current highlighters */
-  }
-  .menu ul li {
-    /*
-				plan your menus and drop-downs wisely.
-				*/
-  }
-  .menu ul li a {
-    /*
-					you can use hover styles here even though this size
-					has the possibility of being a mobile device.
-					*/
-  }
-  /* end .menu */
-  /*********************
-POSTS & CONTENT STYLES
-*********************/
-  /* entry content */
-  .entry-content {
-    /* at this larger size, we can start to align images */
-  }
-  .entry-content .alignleft, .entry-content img.alignleft {
-    margin-right: 1.5em;
-    display: inline;
-    float: left;
-  }
-  .entry-content .alignright, .entry-content img.alignright {
-    margin-left: 1.5em;
-    display: inline;
-    float: right;
-  }
-  .entry-content .aligncenter, .entry-content img.aligncenter {
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-    clear: both;
-  }
-  /* end .entry-content */
-  /*********************
-FOOTER STYLES
-*********************/
-  /*
-check your menus here. do they look good?
-do they need tweaking?
-*/
-  /* end .footer-links */
 }
 
 /*********************
@@ -2344,55 +2005,6 @@ be seen on the Desktop.
   .wp-block-image {
     text-align: center;
   }
-}
-
-/*********************
-RETINA (2x RESOLUTION DEVICES)
-This applies to the retina iPhone (4s) and iPad (2,3) along with
-other displays with a 2x resolution. You can also create a media
-query for retina AND a certain size if you want. Go Nuts.
-*********************/
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /******************************************************************
-Site Name: 
-Author: 
-
-Stylesheet: Retina Screens & Devices Stylesheet
-
-When handling retina screens you need to make adjustments, especially
-if you're not using font icons. Here you can add them in one neat
-place.
-
-******************************************************************/
-  /* 
-
-EXAMPLE 
-Let's say you have an image and you need to make sure it looks ok
-on retina screens. Let's say we have an icon which dimension are
-24px x 24px. In your regular stylesheets, it would look something
-like this:
-
-.icon {
-	width: 24px;
-	height: 24px;
-	background: url(img/test.png) no-repeat;
-}
-
-For retina screens, we have to make some adjustments, so that image
-doesn't look blurry. So, taking into account the image above and the
-dimensions, this is what we would put in our retina stylesheet:
-
-.icon {
-	background: url(img/test@2x.png) no-repeat;
-	background-size: 24px 24px;
-}
-
-So, you would create the same icon, but at double the resolution, meaning 
-it would be 48px x 48px. You'd name it the same, but with a @2x at the end
-(this is pretty standard practice). Set the background image so it matches
-the original dimensions and you are good to go. 
-
-*/
 }
 
 /*********************
