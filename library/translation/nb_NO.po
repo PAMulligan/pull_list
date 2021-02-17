@@ -250,7 +250,7 @@ msgstr "Beklager, men den etterspurte ressursen kunne ikke finnes på siten."
 msgid "Please activate some Widgets."
 msgstr "Vennligst aktiver noen widgets."
 
-#: library/bones.php:52
+#: library/pull-list.php:52
 msgid "Read more &raquo;"
 msgstr "Les mer &raquo;"
 

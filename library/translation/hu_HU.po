@@ -253,7 +253,7 @@ msgstr "A page.php sablonban található hibaüzenet."
 msgid "Search Results for:"
 msgstr "Találati lista:"
 
-#: ../../search.php:24 ../../library/bones.php:350
+#: ../../search.php:24 ../../library/pull-list.php:350
 msgid "Read more &raquo;"
 msgstr "Bővebben &raquo;"
 
@@ -322,23 +322,23 @@ msgstr ""
 "alapjául a <a href=\"http://themble.com/bones\" target=\"_blank\">Bones</a> "
 "szolgált."
 
-#: ../../library/bones.php:213 ../../library/bones.php:230
+#: ../../library/pull-list.php:213 ../../library/pull-list.php:230
 msgid "The Main Menu"
 msgstr "A Főmenü"
 
-#: ../../library/bones.php:214 ../../library/bones.php:248
+#: ../../library/pull-list.php:214 ../../library/pull-list.php:248
 msgid "Footer Links"
 msgstr "Lábléc hivatkozások"
 
-#: ../../library/bones.php:302
+#: ../../library/pull-list.php:302
 msgid "No Related Posts Yet!"
 msgstr "Nincs kapcsolódó bejegyzés!"
 
-#: ../../library/bones.php:350
+#: ../../library/pull-list.php:350
 msgid "Read"
 msgstr "Bővebben"
 
-#: ../../library/bones.php:365
+#: ../../library/pull-list.php:365
 #, php-format
 msgid "Posts by %s"
 msgstr "%s bejegyzései"

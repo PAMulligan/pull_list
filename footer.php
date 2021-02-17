@@ -19,7 +19,7 @@
 				</div>
 			</footer>
 		</div>
-		<?php // all js scripts are loaded in library/bones.php ?>
+		<?php // all js scripts are loaded in library/pull-list.php ?>
 		<?php wp_footer(); ?>
 		<div id="responsive-menu" class="panel mobile-menu">
 			<?php wp_nav_menu( array('theme_location', 'primary')); ?>

@@ -8,15 +8,16 @@ http://themble.com/bones/
 
 Author: Eddie Machado
 
-*******************************************************************
+---
 
-/* 1.71 update */
+/_ 1.71 update _/
+
 - added spacing to the password fields (thx @murtaugh)
 - fixed calc percentage function
 - removed chrome frame support
 
+/_ 1.(I've lost track so I'm starting at)7 update _/
 
-/* 1.(I've lost track so I'm starting at)7 update */
 - reworked Sass files and broke them into partials
 - setup Sass syntax and new mixins / functions
 - added a ton of pull requests (thanks everyone)
@@ -35,19 +36,22 @@ Author: Eddie Machado
 - added wp_link_pages for people who are evil and break articles up into multiple pages
 - worked out Theme Check issues
 
-/* 1.5 update */
+/_ 1.5 update _/
+
 - sorted out new scss structure and cleaned up files
 - more pull requests and language translations
 - added some default form styles
 - added a bunch of new style options and variables
 
-/* 1.4 update */
+/_ 1.4 update _/
+
 - updated Modernizr to 2.6.2
 - merged a ton of pull requests (thanks guys and gals!)
 - added windows 8 tile support
 - put LESS back in (too many requests)
 
 **v1.3 update**
+
 - removed version number from scripts & styles (thanks James)
 - removed LESS (it's over Johnny, It's OVER!)
 - changed post-content to entry-content
@@ -58,6 +62,7 @@ Author: Eddie Machado
 - BORDER BOX ALL THE THINGS (http://paulirish.com/2012/box-sizing-border-box-ftw/)
 
 **v1.25 update**
+
 - updated custom post type page for translation
 - added => to responsive jquery
 - cleaned up theme tags (which make NO sense, but are best practice, go figure)
@@ -69,6 +74,7 @@ Author: Eddie Machado
 - added translations! (Chinese, Spanish)
 
 **v1.2 HUGE update**
+
 - merge responsive version with classic
 - remove post title from read more link (it's way too long)
 - removed readme.txt (it was pointless)
@@ -105,11 +111,13 @@ Author: Eddie Machado
 - removed author.php (you can use archive.php or add it yourself)
 
 **v1.09 more updates**
+
 - updated admin.php to include custom widget examples, admin login styles, and admin footer
 - login.css added for custom login styles
 - custom login logo included
 
 **v1.09 updates**
+
 - added snippet to remove < p > from imgs (http://css-tricks.com/snippets/wordpress/remove-paragraph-tags-from-around-images/)
 - added custom admin functions file
 - updated normalize
@@ -121,8 +129,8 @@ Author: Eddie Machado
 - added role=article to article element
 - added tag & category examples to custom post type
 
-
 **v1.08 release (hellz yea!)**
+
 - replaced default.css with normalize.css
 - added responsive.css
 - completely revamped styles & stylesheets
@@ -144,10 +152,10 @@ Author: Eddie Machado
 - removed DOMAssistant for ancient IE users
 - removed flowplayer folder (lighten the load)
 - remove ie folder for IE scripts that are now gone
-- moved translation function to bones.php
+- moved translation function to pull-list.php
 - removed overflow: hidden from some comment styles
 - cleaned up head with more removals
-- moved related posts & page navi plugin to bones.php
+- moved related posts & page navi plugin to pull-list.php
 - removing wp version from rss feed
 - removing useless wordpress dashboard widgets
 - organizing bones & functions for simplicity
@@ -161,39 +169,41 @@ Author: Eddie Machado
 - added author.php template
 - removed html5 video shortcode
 
-
 **v1.07 more changes**
+
 - updated selectivizr
 - compressed images
 
 **v1.07 changes**
+
 - added modernizr 2.0 custom build
 - added IE=edge,chrome=1 for older, shitty browsers
 - removed iphone stuff ( you can add later if you want it )
 - changed h1 in the header to a p
-- removed *font-size: small; from default.css
+- removed \*font-size: small; from default.css
 - removed empty selectors on default.css stylesheet
 - fixed errors on style.css (mostly removing example using parenthesis)
 - added jquery 1.6.1
 
 **v1.07 w00t!**
+
 - changed clear to clearfix across the board
 - added 320 & Up Boilerplate Extension by Andy Clarke
 - renamed modernizr to the current version file
 - added all the different sized images & icons
 - updated DOMAssistant to newest version
 
-
 **v1.06 More Updates**
+
 - added theme translation to all files
 - removed categories form page meta info
 - fixed confusing copyright issues
 - removed the unneeded author / tag / ect archive title from taxonomy-custom-cat.php
 
-
 **v1.06 Updates**
+
 - changed name of default stylesheet to default so it's easier to
-	debug. (having two stylesheets named style is confusing)
+  debug. (having two stylesheets named style is confusing)
 - added clearing class to #inner-header and #inner-footer
 - added bones body class depending on what browser
 - changed the_author to the_author_posts_link in single.php and archive.php
@@ -202,26 +212,26 @@ Author: Eddie Machado
 - added browser classes to style.css
 - removed lazy load (sorry, it sucked)
 - added twitter and facebook user profiles
-- added post formats to bones.php core
+- added post formats to pull-list.php core
 - fixed menu system (thanks to Dom & Mattias)
 - added categories & tag info for custom post types
 - adding standard categories & tags to custom post type example
 
-
 **v1.06**
+
 - added custom post type and taxonomies file
 - created custom post type template
 - added readme.txt file (really for no reason at all)
 - fixed the margin on the comments title
 - removed duplicate text-align calls in css **Thanks Dom**
 - added add_theme_support( 'automatic-feed-links' ) replacing
-	the deprecated automatic_feed_links();
+  the deprecated automatic_feed_links();
 - added the language_attributes(); to the html tag
 - replaced attribute_escape with esc_attr() in search.php
 - bloginfo('url') in header replaced with echo home_url()
 - using get_template_directory_uri() instead of bloginfo('template_directory')
 - using get_the_author_meta('display_name') instead of deprecated function
-- fixed error in bones.php for menu fallback **thanks Mark**
+- fixed error in pull-list.php for menu fallback **thanks Mark**
 - creating thumbnail fallback functions
 - added header.js and moved modernizr & imgsizer in that file
 - added lazy load jquery plugin
@@ -231,56 +241,56 @@ Author: Eddie Machado
 - added additional selectors to the style.css in the root
 - removed the top margin of the footer menu
 
-
 **v1.05**
+
 - fixed typos in style.css file & logs
 - updated selectivizr to latest version
 - added "embed, ruby, output" to the reset stylesheet based on
-	Eric Meyer's recent reset styles.
+  Eric Meyer's recent reset styles.
 - removed duplicate styles in reset & default stylesheet
 - fixed col460 and changed it to col480
 - added text-align styles to default stylesheet
 
-
 **v1.04 Quick Fix**
+
 - fixed error with script call that was deprecated.
 
-
 **v1.04**
+
 - moved the custom script call and pngfix to the footer
-	from the bones file so it's easier to see what's being
-	called.
+  from the bones file so it's easier to see what's being
+  called.
 - moved apple-touch-icon.png to the library/images folder so
-	file locations are consistent.
+  file locations are consistent.
 - added a log file to keep track of changes
 - fixed html5 video functionality & fallback (w00t!)
 - moved stylesheet call below the wp_head as an experiment.
 - added wp_titletag to the header
 - added pingback function to the header
 - fixed bug where page navi would show up even on pages
-	with only one page of results.
+  with only one page of results.
 - changed the way page navi is called in the archives, search,
-	and index pages.
-
+  and index pages.
 
 **v1.03**
+
 - public release!
 - added html5 video to plugins
 - added page navi to plugins
 - general fixes and optimization
 
-
 **v1.02**
+
 - html5 updates and semantic layout corrected
 - added search css & custom functions
 - added functionality from the html5boilerplate
 
-
 **v1.01**
+
 - added related posts functions
 - general css fixes
 
-
 **v1.00**
+
 - i thought "there must be a better way"
 - did something about it

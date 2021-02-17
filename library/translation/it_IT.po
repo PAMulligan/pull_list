@@ -247,7 +247,7 @@ msgstr "Spiacente, non ho trovato ci&ograve; che cercavi."
 msgid "Please activate some Widgets."
 msgstr "Attiva le Widgets."
 
-#: library/bones.php:52
+#: library/pull-list.php:52
 msgid "Read more &raquo;"
 msgstr "Leggi tutto &raquo;"
 

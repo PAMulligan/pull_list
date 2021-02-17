@@ -255,7 +255,7 @@ msgstr "Dit is de foutmelding in het page.php sjabloon."
 msgid "Search Results for:"
 msgstr "Zoekresultaten voor:"
 
-#: ../../search.php:24 ../../library/bones.php:350
+#: ../../search.php:24 ../../library/pull-list.php:350
 msgid "Read more &raquo;"
 msgstr "Lees meer &raquo;"
 
@@ -324,23 +324,23 @@ msgstr ""
 "target=\"_blank\">Naam Van Jouw Website</a></span>. Gemaakt met <a href="
 "\"http://themble.com/bones\" target=\"_blank\">Bones</a>."
 
-#: ../../library/bones.php:213 ../../library/bones.php:230
+#: ../../library/pull-list.php:213 ../../library/pull-list.php:230
 msgid "The Main Menu"
 msgstr "Het Hoofd Menu"
 
-#: ../../library/bones.php:214 ../../library/bones.php:248
+#: ../../library/pull-list.php:214 ../../library/pull-list.php:248
 msgid "Footer Links"
 msgstr "Voeter Links"
 
-#: ../../library/bones.php:302
+#: ../../library/pull-list.php:302
 msgid "No Related Posts Yet!"
 msgstr "Nog Geen Gerelateerde Berichten!"
 
-#: ../../library/bones.php:350
+#: ../../library/pull-list.php:350
 msgid "Read"
 msgstr "Lezen"
 
-#: ../../library/bones.php:365
+#: ../../library/pull-list.php:365
 #, php-format
 msgid "Posts by %s"
 msgstr "Berichten door %s"

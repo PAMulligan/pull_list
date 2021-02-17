@@ -247,7 +247,7 @@ msgstr "Die angefragte Quelle konnte nicht gefunden werden."
 msgid "Please activate some Widgets."
 msgstr "Bitte nutzen Sie doch ein paar Widgets."
 
-#: library/bones.php:52
+#: library/pull-list.php:52
 msgid "Read more &raquo;"
 msgstr "Weiter &raquo;"
 

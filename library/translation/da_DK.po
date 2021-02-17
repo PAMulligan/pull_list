@@ -243,7 +243,7 @@ msgstr "Beklager, men det søgte emne blev ikke fundet på denne side."
 msgid "Please activate some Widgets."
 msgstr "Aktiver venligst nogle Widgets."
 
-#: library/bones.php:52
+#: library/pull-list.php:52
 msgid "Read more &raquo;"
 msgstr "Læs mere &raquo;"
 

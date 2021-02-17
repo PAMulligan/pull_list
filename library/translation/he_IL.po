@@ -252,7 +252,7 @@ msgstr "מצטערים, התוכן המבוקש לא נמצא באתר."
 msgid "Please activate some Widgets."
 msgstr "נא להפעיל כמה וידג'טים."
 
-#: library/bones.php:52
+#: library/pull-list.php:52
 msgid "Read more &raquo;"
 msgstr "להמשיך לקרוא &laquo;"
 

@@ -247,7 +247,7 @@ msgstr "Desculpa, mas o recurso pedido não se encontra disponível neste site."
 msgid "Please activate some Widgets."
 msgstr "Por favor active alguns Widgets."
 
-#: library/bones.php:52
+#: library/pull-list.php:52
 msgid "Read more &raquo;"
 msgstr "Ler mais &raquo;"
 

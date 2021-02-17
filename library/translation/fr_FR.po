@@ -113,7 +113,7 @@ msgstr "Les commentaires"
 msgid "Comments are closed."
 msgstr "Les commentaires sont clos."
 
-#: footer.php:9 library/bones.php:215
+#: footer.php:9 library/pull-list.php:215
 msgid "Footer Links"
 msgstr "Liens du pied de page"
 
@@ -146,7 +146,7 @@ msgstr "(Editer)"
 msgid "Your comment is awaiting moderation."
 msgstr "Votre commentaire est en attente de modération"
 
-#: header.php:62 library/bones.php:214
+#: header.php:62 library/pull-list.php:214
 msgid "The Main Menu"
 msgstr "Le Menu Principal"
 
@@ -185,20 +185,20 @@ msgstr ""
 "target=\"_blank\">Votre Nom</a></span>. Thème basé sur <a href=\"http://"
 "themble.com/bones\" target=\"_blank\">Bones</a>."
 
-#: library/bones.php:80
+#: library/pull-list.php:80
 #, php-format
 msgid "Page %s"
 msgstr "Page %s"
 
-#: library/bones.php:245
+#: library/pull-list.php:245
 msgid "No Related Posts Yet!"
 msgstr "Aucun article en rapport"
 
-#: library/bones.php:290
+#: library/pull-list.php:290
 msgid "Read "
 msgstr "Lire"
 
-#: library/bones.php:290 search.php:30
+#: library/pull-list.php:290 search.php:30
 msgid "Read more &raquo;"
 msgstr "Lire la suite &raquo;"
 

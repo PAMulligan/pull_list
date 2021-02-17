@@ -243,7 +243,7 @@ msgstr "Valitettavasti pyydettyä resurssia ei löydetty tältä sivustolta."
 msgid "Please activate some Widgets."
 msgstr "Ole hyvä ja aktivoi joitakin vimpaimia."
 
-#: library/bones.php:52
+#: library/pull-list.php:52
 msgid "Read more &raquo;"
 msgstr "Lue lisää &raquo;"
 

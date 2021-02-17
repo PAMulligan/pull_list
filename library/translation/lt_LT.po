@@ -220,11 +220,11 @@ msgstr "Tai yra klaidos pranešimas single.php šablone."
 msgid "This is the error message in the taxonomy-custom_cat.php template."
 msgstr "Tai yra klaidos pranešimas taxonomy-custom_cat.php šablone."
 
-#: ../library/bones.php:206
+#: ../library/pull-list.php:206
 msgid "The Main Menu"
 msgstr "Pagrindinis meniu"
 
-#: ../library/bones.php:207
+#: ../library/pull-list.php:207
 msgid "Footer Links"
 msgstr "Puslapio apačios nuorodos"
 

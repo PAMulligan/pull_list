@@ -242,7 +242,7 @@ msgstr "Żądany zasób nie został znaleziony."
 msgid "Please activate some Widgets."
 msgstr "Proszę, włącz jakieś widgety."
 
-#: library/bones.php:52
+#: library/pull-list.php:52
 msgid "Read more &raquo;"
 msgstr "Czytaj dalej &raquo;"
 

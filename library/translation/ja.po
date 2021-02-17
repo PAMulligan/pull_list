@@ -262,7 +262,7 @@ msgstr ""
 msgid "Search Results for:"
 msgstr "検索結果:"
 
-#: ../../search.php:24 ../../library/bones.php:380
+#: ../../search.php:24 ../../library/pull-list.php:380
 msgid "Read more &raquo;"
 msgstr "もっと読む &raquo;"
 
@@ -330,31 +330,31 @@ msgstr ""
 "\"_blank\">Your Site Name</a></span>。 <a href=\"http://themble.com/bones\" "
 "target=\"_blank\">Bones</a> を使用。"
 
-#: ../../library/bones.php:213 ../../library/bones.php:230
+#: ../../library/pull-list.php:213 ../../library/pull-list.php:230
 msgid "The Main Menu"
 msgstr "メインメニュー"
 
-#: ../../library/bones.php:214 ../../library/bones.php:248
+#: ../../library/pull-list.php:214 ../../library/pull-list.php:248
 msgid "Footer Links"
 msgstr "フッターのリンク"
 
-#: ../../library/bones.php:300
+#: ../../library/pull-list.php:300
 msgid "No Related Posts Yet!"
 msgstr "関連する記事はありません。"
 
-#: ../../library/bones.php:344
+#: ../../library/pull-list.php:344
 msgid "First"
 msgstr "最初"
 
-#: ../../library/bones.php:361
+#: ../../library/pull-list.php:361
 msgid "Last"
 msgstr "最後"
 
-#: ../../library/bones.php:380
+#: ../../library/pull-list.php:380
 msgid "Read"
 msgstr ""
 
-#: ../../library/bones.php:395
+#: ../../library/pull-list.php:395
 #, php-format
 msgid "Posts by %s"
 msgstr ""

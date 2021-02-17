@@ -245,7 +245,7 @@ msgstr "Ne pare rău, dar cerința nu a putut fi găsită pe acest site."
 msgid "Please activate some Widgets."
 msgstr "Vă rog să vă activați câteva Widget-uri."
 
-#: library/bones.php:52
+#: library/pull-list.php:52
 msgid "Read more &raquo;"
 msgstr "Citește mai mult &raquo;"
 
