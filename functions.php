@@ -16,7 +16,7 @@ require_once( 'library/pull-list.php' );
 // require_once( 'library/admin.php' );
 
 /*********************
-LAUNCH BONES
+LAUNCH Pull List
 Let's get everything up and running.
 *********************/
 
@@ -55,8 +55,10 @@ function pull_list_init() {
   add_filter( 'the_content', 'pull_list_filter_ptags_on_images' );
   // cleaning up excerpt
   add_filter( 'excerpt_more', 'pull_list_excerpt_more' );
+  // X-Origin security measure
+  add_action( 'send_headers', 'send_frame_options_header', 10, 0 );
 
-} /* end bones ahoy */
+} /* end init */
 
 // let's get this party started
 add_action( 'after_setup_theme', 'pull_list_init' );
