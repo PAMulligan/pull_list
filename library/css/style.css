@@ -1937,6 +1937,11 @@ be seen on the Desktop.
   .header #inner-header #primary-menu {
     margin: 1em 0.5em;
   }
+  #site-tagline {
+    position: absolute;
+    bottom: -0.3em;
+    right: 22em;
+  }
   .wrap {
     width: 100%;
   }
