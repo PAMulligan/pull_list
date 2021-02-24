@@ -47,5 +47,6 @@
                                  'fallback_cb' => ''                             // fallback function (if there is one)
                         )); ?>
 					</nav>
+					<h1 id="site-tagline" class="h2"><?php echo get_bloginfo('description'); ?></h1>
 				</div>
 			</header>

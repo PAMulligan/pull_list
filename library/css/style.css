@@ -1379,6 +1379,11 @@ HEADER STYLES
   max-width: 100%;
 }
 
+#site-tagline {
+  color: #f8f9fa;
+  text-align: center;
+}
+
 /*********************
 NAVIGATION STYLES
 *********************/
