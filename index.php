@@ -14,7 +14,7 @@
 									<?php the_post_thumbnail('bones-thumb-300', 'class=mobile-img'); ?>
 									<?php the_post_thumbnail('bones-thumb-600', 'class=tablet-img'); ?>
 									<?php the_post_thumbnail('bones-thumb-900', 'class=desktop-img'); ?>
-									<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+									<h2 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 									<p class="byline">
 										<?php printf( __( 'Posted', 'pulllisttheme' ).' %1$s',
 											/* the time the post was published */
@@ -38,7 +38,7 @@
 							<?php else : ?>
 									<article id="post-not-found" class="hentry">
 											<header class="article-header">
-												<h1><?php _e( 'Oops, Post Not Found!', 'pulllisttheme' ); ?></h1>
+												<h2><?php _e( 'Oops, Post Not Found!', 'pulllisttheme' ); ?></h2>
 										</header>
 											<section class="entry-content">
 												<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'pulllisttheme' ); ?></p>
@@ -61,7 +61,7 @@
 									<?php the_post_thumbnail('bones-thumb-300', 'class=mobile-img'); ?>
 									<?php the_post_thumbnail('bones-thumb-600', 'class=tablet-img'); ?>
 									<?php the_post_thumbnail('bones-thumb-900', 'class=desktop-img'); ?>
-									<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+									<h2 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 									<p class="byline">
 										<?php printf( __( 'Posted', 'pulllisttheme' ).' %1$s',
 																				/* the time the post was published */
@@ -85,7 +85,7 @@
 							<?php else : ?>
 									<article id="post-not-found" class="hentry">
 											<header class="article-header">
-												<h1><?php _e( 'Oops, Post Not Found!', 'pulllisttheme' ); ?></h1>
+												<h2><?php _e( 'Oops, Post Not Found!', 'pulllisttheme' ); ?></h2>
 										</header>
 											<section class="entry-content">
 												<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'pulllisttheme' ); ?></p>
